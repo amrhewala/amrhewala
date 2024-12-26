@@ -5,16 +5,23 @@ const experiences = [
   {
     title: "Senior Data Specialist",
     company: "GAFI",
-    period: "2007 - Present",
+    period: "2018 - Present",
     description: "Leading development teams and implementing enterprise-level solutions.",
     skills: ["React", "Node.js", "AWS", "Agile"],
   },
   {
     title: "Software Engineer",
-    company: "Etisalat",
-    period: "2016 - 2019",
+    company: "GAFI",
+    period: "2015 - 2018",
     description: "Developed and maintained web applications for telecom services.",
     skills: ["JavaScript", "PHP", "MySQL", "REST APIs"],
+  },
+  {
+    title: " Data Specialist",
+    company: "GAFI",
+    period: "2007 - 2015",
+    description: "Leading development teams and implementing enterprise-level solutions.",
+    skills: ["React", "Node.js", "AWS", "Agile"],
   },
 ];
 
