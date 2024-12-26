@@ -30,8 +30,9 @@ export const Hero = () => {
           </a>
         </Button>
         <Button variant="outline" size="icon" className="rounded-full hover:scale-110 transition-transform hover:bg-accent/10 hover:border-accent">
-          <a href="a.hewala@gafi.gov.eg" target="_blank" rel="noopener noreferrer">
-          <Mail className="h-5 w-5" />
+        <a href="mailto:a.hewala@gafi.gov.eg" target="_blank" rel="noopener noreferrer">
+        <Mail className="h-5 w-5" />
+        </a>
         </Button>
         <Button variant="outline" size="icon" className="rounded-full hover:scale-110 transition-transform hover:bg-accent/10 hover:border-accent">
           <GithubIcon className="h-5 w-5" />
