@@ -22,7 +22,7 @@ export const Hero = () => {
       <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-fade-in">
         Amr Hewala
       </h1>
-      <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in delay-100">Senior Software Engineer</p>
+      <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in delay-100">Senior Data Analsis </p>
       <div className="flex gap-4 mb-8 animate-fade-in delay-200">
         <Button variant="outline" size="icon" asChild className="rounded-full hover:scale-110 transition-transform hover:bg-accent/10 hover:border-accent">
           <a href="https://www.linkedin.com/in/amr-hewala-7365a896/" target="_blank" rel="noopener noreferrer">
