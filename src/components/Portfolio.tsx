@@ -18,21 +18,33 @@ const projects = [
 
 export const Portfolio = () => {
   return (
-    <section className="py-16 bg-secondary/20">
-      <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">Portfolio</h2>
+    <section className="py-24 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-background" />
+      <div className="container relative">
+        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          Portfolio
+        </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+            <Card key={index} className="group overflow-hidden hover:shadow-2xl transition-all duration-500 backdrop-blur-sm bg-white/80 border-none">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
               <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
+                <CardTitle className="text-2xl group-hover:text-accent transition-colors">{project.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="mb-4 text-gray-700">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, idx) => (
-                    <Badge key={idx} variant="outline">{tech}</Badge>
+                    <Badge key={idx} variant="outline" className="hover:bg-accent/20 transition-colors">
+                      {tech}
+                    </Badge>
                   ))}
                 </div>
               </CardContent>

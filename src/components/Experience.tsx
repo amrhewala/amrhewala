@@ -20,22 +20,24 @@ const experiences = [
 
 export const Experience = () => {
   return (
-    <section className="py-16">
+    <section className="py-24 bg-gradient-to-br from-primary/5 to-accent/5">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">Experience</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Experience</h2>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <Card key={index} className="relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-1 h-full bg-accent"></div>
+            <Card key={index} className="relative overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-primary to-accent" />
               <CardHeader>
-                <CardTitle className="text-xl font-semibold">{exp.title}</CardTitle>
+                <CardTitle className="text-2xl font-semibold">{exp.title}</CardTitle>
                 <p className="text-gray-600">{exp.company} • {exp.period}</p>
               </CardHeader>
               <CardContent>
                 <p className="mb-4 text-gray-700">{exp.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill, idx) => (
-                    <Badge key={idx} variant="secondary">{skill}</Badge>
+                    <Badge key={idx} variant="secondary" className="hover:bg-accent/20 transition-colors">
+                      {skill}
+                    </Badge>
                   ))}
                 </div>
               </CardContent>
