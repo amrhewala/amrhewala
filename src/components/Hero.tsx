@@ -9,13 +9,13 @@ export const Hero = () => {
       {/* Enhanced Profile Image Container */}
       <div className="relative group">
         <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-        <div className="relative">
+        <div className="relative w-48 h-48 overflow-hidden rounded-full">
           <img
             src="/lovable-uploads/126b5734-9f0a-4a0b-9a9f-6a9b3dedd1ca.png"
             alt="Amr Hewala"
-            className="w-48 h-48 rounded-full border-4 border-accent/50 mb-8 shadow-2xl hover:scale-105 transition-all duration-500 object-cover filter hover:brightness-110 animate-fade-in z-10 relative"
+            className="w-full h-full object-cover object-center hover:scale-105 transition-all duration-500 filter hover:brightness-110 animate-fade-in z-10"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </div>
       </div>
 
