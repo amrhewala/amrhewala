@@ -20,15 +20,15 @@ const getProgressValue = (level: string): number => {
 
 export const Skills = () => {
   const skills: SkillOrLanguage[] = [
-    { name: "React", level: "advanced" },
-    { name: "TypeScript", level: "intermediate" },
-    { name: "Node.js", level: "expert" },
+    { name: "Python", level: "advanced" },
+    { name: "Power BI", level: "expert" },
+    { name: "SQL", level: "expert" },
   ];
 
   const languages: SkillOrLanguage[] = [
     { name: "English", level: "advanced" },
     { name: "Arabic", level: "native" },
-    { name: "French", level: "basic" },
+    { name: "German", level: "basic" },
   ];
 
   return (
