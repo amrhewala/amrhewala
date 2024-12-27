@@ -1,7 +1,52 @@
 import { GithubIcon, LinkedinIcon, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const Hero = () => {
+  const certificates = [
+    {
+      name: "Certificate 1",
+      image: "/placeholder.svg", // Replace with your certificate image
+      institution: "Institution 1"
+    },
+    {
+      name: "Certificate 2",
+      image: "/placeholder.svg", // Replace with your certificate image
+      institution: "Institution 2"
+    }
+  ];
+
+  const workplaces = [
+    {
+      name: "Workplace 1",
+      logo: "/placeholder.svg", // Replace with your workplace logo
+    },
+    {
+      name: "Workplace 2",
+      logo: "/placeholder.svg", // Replace with your workplace logo
+    }
+  ];
+
+  const blogPosts = [
+    {
+      title: "Article 1",
+      excerpt: "Short description of article 1",
+      date: "2024-01-01"
+    },
+    {
+      title: "Article 2",
+      excerpt: "Short description of article 2",
+      date: "2024-01-02"
+    }
+  ];
+
   return (
     <div className="min-h-[90vh] flex flex-col justify-center items-center text-center p-4 relative overflow-hidden bg-gradient-to-br from-primary/5 via-accent/10 to-background">
       <div className="absolute inset-0 bg-grid-white/10 bg-[size:20px_20px] [mask-image:radial-gradient(white,transparent_85%)]" />
@@ -22,21 +67,69 @@ export const Hero = () => {
       <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-fade-in">
         Amr Hewala
       </h1>
-      <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in delay-100">Senior Data Analsis </p>
-      <div className="flex gap-4 mb-8 animate-fade-in delay-200">
+      <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in delay-100">Senior Data Analysis </p>
+      
+      {/* Social Media Section */}
+      <div className="flex gap-4 mb-12 animate-fade-in delay-200">
         <Button variant="outline" size="icon" asChild className="rounded-full hover:scale-110 transition-transform hover:bg-accent/10 hover:border-accent">
           <a href="https://www.linkedin.com/in/amr-hewala-7365a896/" target="_blank" rel="noopener noreferrer">
             <LinkedinIcon className="h-5 w-5" />
           </a>
         </Button>
         <Button variant="outline" size="icon" className="rounded-full hover:scale-110 transition-transform hover:bg-accent/10 hover:border-accent">
-        <a href="mailto:a.hewala@gafi.gov.eg" target="_blank" rel="noopener noreferrer">
-        <Mail className="h-5 w-5" />
-        </a>
+          <a href="mailto:a.hewala@gafi.gov.eg" target="_blank" rel="noopener noreferrer">
+            <Mail className="h-5 w-5" />
+          </a>
         </Button>
         <Button variant="outline" size="icon" className="rounded-full hover:scale-110 transition-transform hover:bg-accent/10 hover:border-accent">
           <GithubIcon className="h-5 w-5" />
         </Button>
+      </div>
+
+      {/* Certificates and Workplace Logos Section */}
+      <div className="w-full max-w-4xl mb-12 animate-fade-in delay-300">
+        <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          Certificates & Experience
+        </h2>
+        <Carousel className="w-full">
+          <CarouselContent>
+            {[...certificates, ...workplaces].map((item, index) => (
+              <CarouselItem key={index} className="md:basis-1/3">
+                <Card className="bg-white/5 backdrop-blur-sm border border-accent/20 hover:border-accent/40 transition-colors">
+                  <CardContent className="flex items-center justify-center p-6">
+                    <img
+                      src={item.image || item.logo}
+                      alt={item.name}
+                      className="h-24 object-contain hover:scale-105 transition-transform"
+                    />
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+      </div>
+
+      {/* Blog Posts Section */}
+      <div className="w-full max-w-4xl animate-fade-in delay-400">
+        <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          Latest Articles
+        </h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          {blogPosts.map((post, index) => (
+            <Card key={index} className="bg-white/5 backdrop-blur-sm border border-accent/20 hover:border-accent/40 transition-colors">
+              <CardHeader>
+                <CardTitle className="text-xl font-semibold">{post.title}</CardTitle>
+                <p className="text-sm text-gray-500">{post.date}</p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">{post.excerpt}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );
