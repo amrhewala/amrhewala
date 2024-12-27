@@ -40,8 +40,8 @@ export const Hero = () => {
       logo: "/GAFI.svg",
     },
     {
-      name: "Workplace 2",
-      logo: "/placeholder.svg",
+      name: "Suez Canal University",
+      logo: "/Suez Canal University.svg",
     }
   ];
 
