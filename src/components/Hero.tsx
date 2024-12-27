@@ -13,12 +13,12 @@ export const Hero = () => {
   const certificates = [
     {
       name: "Certificate 1",
-      image: "/placeholder.svg", // Replace with your certificate image
+      image: "/placeholder.svg",
       institution: "Institution 1"
     },
     {
       name: "Certificate 2",
-      image: "/placeholder.svg", // Replace with your certificate image
+      image: "/placeholder.svg",
       institution: "Institution 2"
     }
   ];
@@ -26,11 +26,11 @@ export const Hero = () => {
   const workplaces = [
     {
       name: "Workplace 1",
-      logo: "/placeholder.svg", // Replace with your workplace logo
+      logo: "/placeholder.svg",
     },
     {
       name: "Workplace 2",
-      logo: "/placeholder.svg", // Replace with your workplace logo
+      logo: "/placeholder.svg",
     }
   ];
 
@@ -46,6 +46,14 @@ export const Hero = () => {
       date: "2024-01-02"
     }
   ];
+
+  // Helper function to get the correct image source
+  const getImageSource = (item: typeof certificates[0] | typeof workplaces[0]): string => {
+    if ('image' in item) {
+      return item.image;
+    }
+    return item.logo;
+  };
 
   return (
     <div className="min-h-[90vh] flex flex-col justify-center items-center text-center p-4 relative overflow-hidden bg-gradient-to-br from-primary/5 via-accent/10 to-background">
@@ -98,7 +106,7 @@ export const Hero = () => {
                 <Card className="bg-white/5 backdrop-blur-sm border border-accent/20 hover:border-accent/40 transition-colors">
                   <CardContent className="flex items-center justify-center p-6">
                     <img
-                      src={item.image || item.logo}
+                      src={getImageSource(item)}
                       alt={item.name}
                       className="h-24 object-contain hover:scale-105 transition-transform"
                     />
