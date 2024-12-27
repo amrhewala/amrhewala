@@ -40,7 +40,7 @@ export const Hero = () => {
       logo: "/GAFI.svg",
     },
     {
-      name: "Suez Canal University",
+      name: "Suez_Canal_University",
       logo: "/Suez Canal University.svg",
     }
   ];
