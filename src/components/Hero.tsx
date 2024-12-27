@@ -88,6 +88,19 @@ export const Hero = () => {
       </h1>
       <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in delay-100">Senior Data Analysis</p>
       
+      {/* Education and Workplace Logos */}
+      <div className="flex flex-wrap justify-center gap-8 mb-12 animate-fade-in delay-200">
+        {[...education, ...workplaces].map((item, index) => (
+          <div key={index} className="w-16 h-16 relative group">
+            <img
+              src={getImageSource(item)}
+              alt={item.name}
+              className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        ))}
+      </div>
+      
       {/* Social Media Section */}
       <div className="flex gap-4 mb-12 animate-fade-in delay-200">
         <Button variant="outline" size="icon" asChild className="rounded-full hover:scale-110 transition-transform hover:bg-accent/10 hover:border-accent">
@@ -107,40 +120,14 @@ export const Hero = () => {
         </Button>
       </div>
 
-      {/* Education Section */}
-      <div className="w-full max-w-4xl mb-12 animate-fade-in delay-300">
-        <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          Education
-        </h2>
-        <Carousel className="w-full">
-          <CarouselContent>
-            {education.map((item, index) => (
-              <CarouselItem key={index} className="md:basis-1/3">
-                <Card className="bg-white/5 backdrop-blur-sm border border-accent/20 hover:border-accent/40 transition-colors">
-                  <CardContent className="flex items-center justify-center p-6">
-                    <img
-                      src={getImageSource(item)}
-                      alt={item.name}
-                      className="h-24 object-contain hover:scale-105 transition-transform"
-                    />
-                  </CardContent>
-                </Card>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-      </div>
-
-      {/* Certificates and Workplace Logos Section */}
+      {/* Certificates Section */}
       <div className="w-full max-w-4xl mb-12 animate-fade-in delay-300">
         <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           Certificates & Experience
         </h2>
         <Carousel className="w-full">
           <CarouselContent>
-            {[...certificates, ...workplaces].map((item, index) => (
+            {certificates.map((item, index) => (
               <CarouselItem key={index} className="md:basis-1/3">
                 <Card className="bg-white/5 backdrop-blur-sm border border-accent/20 hover:border-accent/40 transition-colors">
                   <CardContent className="flex items-center justify-center p-6">
