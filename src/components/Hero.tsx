@@ -12,8 +12,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export const Hero = () => {
   const education = [
     {
-      name: "Education 1",
-      logo: "/placeholder.svg",
+      name: "Suez Canal University",
+      logo: "/Suez Canal University.svg",
     },
     {
       name: "Education 2",
