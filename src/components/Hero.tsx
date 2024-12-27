@@ -56,9 +56,9 @@ export const Hero = () => {
       date: "2024-01-01"
     },
     {
-      title: "Article 2",
-      excerpt: "Short description of article 2",
-      date: "2024-01-02"
+      title: "Power BI",
+      excerpt: "Short description of Power BI",
+      date: "2024-12-27"
     }
   ];
 
