@@ -12,12 +12,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export const Hero = () => {
   const education = [
     {
-      name: "Suez Canal University",
-      logo: "/Suez Canal University.svg",
+      name: "Udacity",
+      logo: "/udacity.svg",
+    },
+        {
+      name: "Udacity",
+      logo: "/udacity.png",
     },
     {
-      name: "Education 2",
-      logo: "/placeholder.svg",
+      name: "Wien",
+      logo: "/Uni.png",
     }
   ];
 
@@ -41,7 +45,7 @@ export const Hero = () => {
     },
     {
       name: "Suez_Canal_University",
-      logo: "/Suez Canal University.svg",
+      logo: "/Suez_Canal_University.svg",
     }
   ];
 
