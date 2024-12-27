@@ -21,6 +21,7 @@ const getProgressValue = (level: string): number => {
 export const Skills = () => {
   const skills: SkillOrLanguage[] = [
     { name: "Python", level: "advanced" },
+    { name: "Panda", level: "expert" },
     { name: "Power BI", level: "expert" },
     { name: "SQL", level: "expert" },
   ];
