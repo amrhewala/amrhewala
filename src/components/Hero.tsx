@@ -36,8 +36,8 @@ export const Hero = () => {
 
   const workplaces = [
     {
-      name: "Workplace 1",
-      logo: "/placeholder.svg",
+      name: "GAFI",
+      logo: "/GAFI.svg",
     },
     {
       name: "Workplace 2",
@@ -47,7 +47,7 @@ export const Hero = () => {
 
   const blogPosts = [
     {
-      title: "Article 1",
+      title: "Data Analsis",
       excerpt: "Short description of article 1",
       date: "2024-01-01"
     },
