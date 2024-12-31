@@ -19,7 +19,31 @@ export const Hero = () => {
       name: "Udacity",
       logo: "/udacity.png",
     },
+        {
+      name: "Google",
+      logo: "/Google__G__logo.svg.png",
+    },
+     {
+      name: "Power-BI",
+      logo: "/Power-BI.png",
+    },
+     {
+      name: "U-M",
+      logo: "/U-M_Logo-Hex.png",
+    },
     {
+      name: "Coursera",
+      logo: "/coursera-vector-logo-2022.png",
+    },
+    {
+      name: "data-analytics",
+      logo: "/data-analytics.jpg",
+    },
+    {
+      name: "python",
+      logo: "/python.png",
+    },
+     {
       name: "Wien",
       logo: "/Uni.png",
     }
