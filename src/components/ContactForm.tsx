@@ -43,15 +43,16 @@ export const ContactForm = () => {
                 <Mail className="text-accent" />
                 <a href="mailto:a.hewala@gafi.gov.eg" className="hover:text-accent">
                   a.hewala@gafi.gov.eg
+                  amrhewala@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-accent" />
-                <span>+20 (123) 456-7890</span>
+                <span>+20 01007425745 </span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="text-accent" />
-                <span>Cairo, Egypt</span>
+                <span>Suez,Egypt</span>
               </div>
             </CardContent>
           </Card>
