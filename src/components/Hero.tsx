@@ -62,12 +62,14 @@ export const Hero = () => {
     {
       name: "Certificate 1",
       image: "/placeholder.svg",
-      institution: "Institution 1"
+      institution: "Institution 1",
+      color: "#1a365d"
     },
     {
       name: "Certificate 2",
       image: "/placeholder.svg",
-      institution: "Institution 2"
+      institution: "Institution 2",
+      color: "#1a365d"
     }
   ];
 
@@ -75,10 +77,12 @@ export const Hero = () => {
     {
       name: "GAFI",
       logo: "/GAFI.svg",
+      color: "#1a365d" // Adding color property
     },
     {
       name: "Suez_Canal_University",
       logo: "/Suez_Canal_University.svg",
+      color: "#1a365d" // Adding color property
     }
   ];
 
