@@ -7,21 +7,21 @@ const experiences = [
     company: "GAFI",
     period: "2018 - Present",
     description: "Leading development teams and implementing enterprise-level solutions.",
-    skills: ["React", "Node.js", "AWS", "Agile"],
+    skills: ["PHP", "Python", "NumPy","Pandas","Matplotlib", "Agile"],
   },
   {
-    title: "Software Engineer",
-    company: "GAFI",
+    title: "CEO",
+    company: "Family Company s.r.o",
     period: "2015 - 2018",
-    description: "Developed and maintained web applications for telecom services.",
-    skills: ["JavaScript", "PHP", "MySQL", "REST APIs"],
+    description: "Family company is a multi-service provider; that offers consulting and support for Small and medium enterprises and business entrepreneurs, to help ensure a solid construction of medium-size business enterprises.",
+    skills: ["Business Consultation", "Business Entrepreneurs Consulting ", "Companies Formation", "Legal Services", "IT Services"],
   },
   {
     title: " Data Specialist",
     company: "GAFI",
     period: "2007 - 2015",
     description: "Leading development teams and implementing enterprise-level solutions.",
-    skills: ["React", "Node.js", "AWS", "Agile"],
+    skills: ["MS Accsses", "MS Excel", "Agile"],
   },
 ];
 
