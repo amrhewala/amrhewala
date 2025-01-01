@@ -1,18 +1,16 @@
 import { Hero } from "@/components/Hero";
-import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { Portfolio } from "@/components/Portfolio";
-import { Skills } from "@/components/Skills";
+import { ContactForm } from "@/components/ContactForm";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <main>
       <Hero />
-      <About />
       <Experience />
-      <Skills />
       <Portfolio />
-    </div>
+      <ContactForm />
+    </main>
   );
 };
 

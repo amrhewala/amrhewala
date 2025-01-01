@@ -14,38 +14,47 @@ export const Hero = () => {
     {
       name: "Udacity",
       logo: "/udacity.svg",
+      color: "#02b3e4" // Udacity blue
     },
-        {
+    {
       name: "Udacity",
       logo: "/udacity.png",
+      color: "#02b3e4"
     },
-        {
+    {
       name: "Google",
       logo: "/Google__G__logo.svg.png",
+      color: "#4285F4" // Google blue
     },
-     {
+    {
       name: "Power-BI",
       logo: "/Power-BI.png",
+      color: "#F2C811" // Power BI yellow
     },
-     {
+    {
       name: "U-M",
       logo: "/U-M_Logo-Hex.png",
+      color: "#00274C" // Michigan blue
     },
     {
       name: "Coursera",
       logo: "/coursera-vector-logo-2022.png",
+      color: "#0056D2" // Coursera blue
     },
     {
       name: "data-analytics",
       logo: "/data-analytics.jpg",
+      color: "#1a365d" // Primary color
     },
     {
       name: "python",
       logo: "/python.png",
+      color: "#3776AB" // Python blue
     },
-     {
+    {
       name: "Wien",
       logo: "/Uni.png",
+      color: "#1a365d" // Primary color
     }
   ];
 
@@ -117,18 +126,26 @@ export const Hero = () => {
       <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in delay-100">Senior Data Analysis</p>
       
       {/* Education and Workplace Logos */}
-      <div className="flex flex-wrap justify-center gap-8 mb-12 animate-fade-in delay-200">
+      <div className="flex flex-wrap justify-center gap-8 mb-12 animate-fade-in delay-200 max-w-4xl">
         {[...education, ...workplaces].map((item, index) => (
-          <div key={index} className="w-16 h-16 relative group">
+          <div 
+            key={index} 
+            className="w-24 h-24 relative group p-2 rounded-lg hover:shadow-xl transition-all duration-300"
+            style={{ backgroundColor: `${item.color}10` }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-transparent to-white/10 rounded-lg" />
             <img
               src={getImageSource(item)}
               alt={item.name}
               className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
             />
+            <div className="opacity-0 group-hover:opacity-100 absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs p-1 rounded-b-lg transition-opacity">
+              {item.name}
+            </div>
           </div>
         ))}
       </div>
-      
+
       {/* Social Media Section */}
       <div className="flex gap-4 mb-12 animate-fade-in delay-200">
         <Button variant="outline" size="icon" asChild className="rounded-full hover:scale-110 transition-transform hover:bg-accent/10 hover:border-accent">
