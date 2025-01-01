@@ -43,6 +43,7 @@ export const ContactForm = () => {
                 <Mail className="text-accent" />
                 <a href="mailto:a.hewala@gafi.gov.eg" className="hover:text-accent">
                   a.hewala@gafi.gov.eg
+                <a href="mailto:amrhewala@gmail.com" className="hover:text-accent">
                   amrhewala@gmail.com
                 </a>
               </div>
