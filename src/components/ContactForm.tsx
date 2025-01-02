@@ -41,19 +41,22 @@ export const ContactForm = () => {
             <CardContent className="space-y-4">
               <div className="flex items-center gap-3">
                 <Mail className="text-accent" />
-                <a href="mailto:a.hewala@gafi.gov.eg" className="hover:text-accent">
-                  a.hewala@gafi.gov.eg
-                <a href="mailto:amrhewala@gmail.com" className="hover:text-accent">
-                  amrhewala@gmail.com
-                </a>
+                <div className="flex flex-col">
+                  <a href="mailto:a.hewala@gafi.gov.eg" className="hover:text-accent">
+                    a.hewala@gafi.gov.eg
+                  </a>
+                  <a href="mailto:amrhewala@gmail.com" className="hover:text-accent">
+                    amrhewala@gmail.com
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="text-accent" />
-                <span>+20 01007425745 </span>
+                <span>+20 01007425745</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="text-accent" />
-                <span>Suez,Egypt</span>
+                <span>Suez, Egypt</span>
               </div>
             </CardContent>
           </Card>
