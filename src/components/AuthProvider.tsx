@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { createClient, User } from '@supabase/supabase-js';
+import { User } from '@supabase/supabase-js';
 import { useToast } from "@/components/ui/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -56,8 +56,15 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   const signOut = async () => {
     try {
-      await supabase.auth.signOut();
+      const { error } = await supabase.auth.signOut();
+      if (error) throw error;
+      
+      setUser(null);
       navigate('/login');
+      toast({
+        title: "Signed out",
+        description: "You have been signed out successfully.",
+      });
     } catch (error) {
       console.error('Error signing out:', error);
       toast({
