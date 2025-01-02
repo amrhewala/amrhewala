@@ -12,11 +12,6 @@ export const Hero = () => {
       color: "#02b3e4"
     },
     {
-      name: "Udacity",
-      logo: "/udacity.png",
-      color: "#02b3e4"
-    },
-    {
       name: "Google",
       logo: "/Google__G__logo.svg.png",
       color: "#4285F4"
@@ -27,7 +22,7 @@ export const Hero = () => {
       color: "#F2C811"
     },
     {
-      name: "U-M",
+      name: "University of Michigan",
       logo: "/U-M_Logo-Hex.png",
       color: "#00274C"
     },
@@ -37,18 +32,31 @@ export const Hero = () => {
       color: "#0056D2"
     },
     {
-      name: "data-analytics",
+      name: "Data Analytics",
       logo: "/data-analytics.jpg",
       color: "#1a365d"
     },
     {
-      name: "python",
+      name: "Python",
       logo: "/python.png",
       color: "#3776AB"
     },
     {
-      name: "Wien",
+      name: "University of Vienna",
       logo: "/Uni.png",
+      color: "#1a365d"
+    }
+  ];
+
+  const workplaces = [
+    {
+      name: "GAFI",
+      logo: "/GAFI.svg",
+      color: "#1a365d"
+    },
+    {
+      name: "Suez Canal University",
+      logo: "/Suez_Canal_University.svg",
       color: "#1a365d"
     }
   ];
@@ -68,22 +76,9 @@ export const Hero = () => {
     }
   ];
 
-  const workplaces = [
-    {
-      name: "GAFI",
-      logo: "/GAFI.svg",
-      color: "#1a365d"
-    },
-    {
-      name: "Suez_Canal_University",
-      logo: "/Suez_Canal_University.svg",
-      color: "#1a365d"
-    }
-  ];
-
   const blogPosts = [
     {
-      title: "Data Analsis",
+      title: "Data Analysis",
       excerpt: "Short description of article 1",
       date: "2024-01-01"
     },
@@ -99,7 +94,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-grid-white/10 bg-[size:20px_20px] [mask-image:radial-gradient(white,transparent_85%)]" />
       
       <ProfileImage 
-        src="/lovable-uploads/126b5734-9f0a-4a0b-9a9f-6a9b3dedd1ca.png"
+        src="/placeholder.svg"
         alt="Amr Hewala"
       />
 
