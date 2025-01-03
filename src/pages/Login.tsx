@@ -22,10 +22,31 @@ const Login = () => {
     }
   }, [user, navigate]);
 
+  const validateForm = () => {
+    if (!email || !password) {
+      toast({
+        title: "Missing Fields",
+        description: "Please fill in both email and password.",
+        variant: "destructive",
+      });
+      return false;
+    }
+    if (password.length < 6) {
+      toast({
+        title: "Invalid Password",
+        description: "Password must be at least 6 characters long.",
+        variant: "destructive",
+      });
+      return false;
+    }
+    return true;
+  };
+
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!validateForm()) return;
+    
     setLoading(true);
-
     try {
       const { error } = await supabase.auth.signInWithPassword({
         email,
@@ -46,12 +67,6 @@ const Login = () => {
             variant: "destructive",
           });
         }
-      } else {
-        toast({
-          title: "Success",
-          description: "Logged in successfully",
-        });
-        navigate("/dashboard");
       }
     } catch (error) {
       console.error("Login error:", error);
@@ -67,8 +82,9 @@ const Login = () => {
 
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!validateForm()) return;
+    
     setLoading(true);
-
     try {
       const { error } = await supabase.auth.signUp({
         email,
@@ -84,7 +100,7 @@ const Login = () => {
       } else {
         toast({
           title: "Success",
-          description: "Please check your email to confirm your account",
+          description: "Please check your email to confirm your account. For development, you may want to disable email confirmation in Supabase settings.",
         });
       }
     } catch (error) {
