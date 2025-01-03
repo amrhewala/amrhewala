@@ -94,7 +94,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-grid-white/10 bg-[size:20px_20px] [mask-image:radial-gradient(white,transparent_85%)]" />
       
       <ProfileImage 
-        src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+        src="/personalphoto.jpg"
         alt="Amr Hewala"
       />
 
