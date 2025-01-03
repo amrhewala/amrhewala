@@ -23,9 +23,9 @@ export const LogoGrid = ({ items }: LogoGridProps) => {
   return (
     <div className="flex flex-wrap justify-center gap-8 mb-12 animate-fade-in delay-200 max-w-4xl">
       {items.map((item, index) => (
-        <div 
+        <Card 
           key={index} 
-          className="w-24 h-24 relative group p-2 rounded-lg hover:shadow-xl transition-all duration-300"
+          className="w-24 h-24 relative group p-2 rounded-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
           style={{ backgroundColor: `${item.color}10` }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-transparent to-white/10 rounded-lg" />
@@ -37,7 +37,7 @@ export const LogoGrid = ({ items }: LogoGridProps) => {
           <div className="opacity-0 group-hover:opacity-100 absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs p-1 rounded-b-lg transition-opacity">
             {item.name}
           </div>
-        </div>
+        </Card>
       ))}
     </div>
   );

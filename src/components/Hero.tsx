@@ -69,7 +69,7 @@ export const Hero = () => {
       color: "#1a365d"
     },
     {
-      name: "Certificate 2",
+      name: "Certificate 2", 
       image: "/placeholder.svg",
       institution: "Institution 2",
       color: "#1a365d"
@@ -85,7 +85,7 @@ export const Hero = () => {
     {
       title: "Power BI",
       excerpt: "Short description of Power BI",
-      date: "2024-12-27"
+      date: "2024-12-27" 
     }
   ];
 
@@ -94,7 +94,7 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-grid-white/10 bg-[size:20px_20px] [mask-image:radial-gradient(white,transparent_85%)]" />
       
       <ProfileImage 
-        src="/placeholder.svg"
+        src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
         alt="Amr Hewala"
       />
 
