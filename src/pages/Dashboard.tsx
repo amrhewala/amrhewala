@@ -5,11 +5,30 @@ import { ArticleForm } from "@/components/dashboard/ArticleForm";
 import { ExperienceForm } from "@/components/dashboard/ExperienceForm";
 import { SkillForm } from "@/components/dashboard/SkillForm";
 import { LanguageForm } from "@/components/dashboard/LanguageForm";
+import { Button } from "@/components/ui/button";
+import { useAuth } from "@/components/AuthProvider";
+import { LogOut } from "lucide-react";
 
 const Dashboard = () => {
+  const { signOut } = useAuth();
+
+  const handleLogout = async () => {
+    await signOut();
+  };
+
   return (
     <div className="container mx-auto p-6 space-y-8">
-      <h1 className="text-4xl font-bold mb-8">Dashboard</h1>
+      <div className="flex justify-between items-center mb-8">
+        <h1 className="text-4xl font-bold">Dashboard</h1>
+        <Button
+          onClick={handleLogout}
+          variant="outline"
+          className="flex items-center gap-2"
+        >
+          <LogOut className="h-4 w-4" />
+          Logout
+        </Button>
+      </div>
 
       <Tabs defaultValue="logos" className="space-y-4">
         <TabsList className="grid grid-cols-3 lg:grid-cols-6 gap-4">
