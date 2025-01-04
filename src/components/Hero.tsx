@@ -3,103 +3,12 @@ import { LogoGrid } from "./hero/LogoGrid";
 import { SocialLinks } from "./hero/SocialLinks";
 import { CertificatesCarousel } from "./hero/CertificatesCarousel";
 import { BlogPosts } from "./hero/BlogPosts";
+import { education } from "@/data/education";
+import { workplaces } from "@/data/workplaces";
+import { certificates } from "@/data/certificates";
+import { blogPosts } from "@/data/blog-posts";
 
 export const Hero = () => {
-  const education = [
-    {
-      name: "Udacity",
-      logo: "/udacity.svg",
-      color: "#02b3e4"
-    },
-    {
-      name: "Udacity",
-      logo: "/udacity.png",
-      color: "#02b3e4"
-    },
-    {
-      name: "Google",
-      logo: "/Google__G__logo.svg.png",
-      color: "#4285F4"
-    },
-    {
-      name: "Power-BI",
-      logo: "/Power-BI.png",
-      color: "#F2C811"
-    },
-    {
-      name: "U-M",
-      logo: "/U-M_Logo-Hex.png",
-      color: "#00274C"
-    },
-    {
-      name: "Coursera",
-      logo: "/coursera-vector-logo-2022.png",
-      color: "#0056D2"
-    },
-    {
-      name: "data-analytics",
-      logo: "/data-analytics.jpg",
-      color: "#1a365d"
-    },
-    {
-      name: "python",
-      logo: "/python.png",
-      color: "#3776AB"
-    },
-    {
-      name: "Wien",
-      logo: "/Uni.png",
-      color: "#1a365d"
-    }
-  ];
-
-  const certificates = [
-    {
-      name: "Google Data Analytics",
-      image: "https://gaafchljkvriwwvevtuz.supabase.co/storage/v1/object/public/uploads/Google%20Data%20Analytics.jpg",
-      institution: "Google",
-      color: "#4285F4"
-    },
-    {
-      name: "Data Analysis with Python",
-      image: "https://gaafchljkvriwwvevtuz.supabase.co/storage/v1/object/public/uploads/Data%20Analysis%20with%20Python.jpg",
-      institution: "FreeCodeCamp",
-      color: "#0A0A23"
-    },
-    {
-      name: "Power BI",
-      image: "https://gaafchljkvriwwvevtuz.supabase.co/storage/v1/object/public/uploads/Power%20BI.jpg",
-      institution: "Microsoft",
-      color: "#F2C811"
-    }
-  ];
-
-  const workplaces = [
-    {
-      name: "GAFI",
-      logo: "/GAFI.svg",
-      color: "#1a365d"
-    },
-    {
-      name: "Suez_Canal_University",
-      logo: "/Suez_Canal_University.svg",
-      color: "#1a365d"
-    }
-  ];
-
-  const blogPosts = [
-    {
-      title: "Data Analsis",
-      excerpt: "Short description of article 1",
-      date: "2024-01-01"
-    },
-    {
-      title: "Power BI",
-      excerpt: "Short description of Power BI",
-      date: "2024-12-27"
-    }
-  ];
-
   return (
     <div className="min-h-[90vh] flex flex-col justify-center items-center text-center p-4 relative overflow-hidden bg-gradient-to-br from-primary/5 via-accent/10 to-background">
       <div className="absolute inset-0 bg-grid-white/10 bg-[size:20px_20px] [mask-image:radial-gradient(white,transparent_85%)]" />
@@ -112,7 +21,9 @@ export const Hero = () => {
       <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-fade-in">
         Amr Hewala
       </h1>
-      <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in delay-100">Senior Data Analysis</p>
+      <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in delay-100">
+        Senior Data Analysis
+      </p>
       
       <LogoGrid items={[...education, ...workplaces]} />
       <SocialLinks />

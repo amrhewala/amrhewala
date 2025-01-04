@@ -31,11 +31,13 @@ export const CertificatesCarousel = ({ certificates }: CertificatesCarouselProps
               <div className="p-1">
                 <Card className="bg-white/5 backdrop-blur-sm border border-accent/20 hover:border-accent/40 transition-colors">
                   <CardContent className="flex flex-col items-center justify-center p-6 gap-4">
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="w-full h-48 object-contain rounded-lg hover:scale-105 transition-transform"
-                    />
+                    <div className="w-full h-48 relative">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="absolute inset-0 w-full h-full object-contain rounded-lg hover:scale-105 transition-transform"
+                      />
+                    </div>
                     <div className="text-center">
                       <h3 className="font-semibold text-lg" style={{ color: item.color }}>
                         {item.name}
