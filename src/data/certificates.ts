@@ -17,6 +17,12 @@ export const certificates = [
     institution: "University of Michigan",
     color: "#00274C"
   },
+    {
+    name: "Python Certificate",
+    image: "/lovable-uploads/1df94969-f34d-4b9c-8d9b-9e88ad918718.png",
+    institution: "Mimo",
+    color: "#00C853"
+  },
   {
     name: "Foundations: Data, Data, Everywhere",
     image: "/lovable-uploads/523901b7-9331-4140-8002-903ccd25c740.png",
@@ -42,7 +48,7 @@ export const certificates = [
     color: "#4285F4"
   },
   {
-    name: "Python Certificate",
+    name: "SQL Certificate",
     image: "/lovable-uploads/1df94969-f34d-4b9c-8d9b-9e88ad918718.png",
     institution: "Mimo",
     color: "#00C853"
