@@ -30,17 +30,17 @@ export const education = [
     color: "#0056D2"
   },
   {
-    name: "data-analytics",
+    name: "Data Analytics",
     logo: "/data-analytics.jpg",
     color: "#1a365d"
   },
   {
-    name: "python",
+    name: "Python",
     logo: "/python.png",
     color: "#3776AB"
   },
   {
-    name: "Wien",
+    name: "University of Wien",
     logo: "/Uni.png",
     color: "#1a365d"
   }
