@@ -8,5 +8,10 @@ export const workplaces = [
     name: "Suez_Canal_University",
     logo: "/Suez_Canal_University.PNG",
     color: "#1a365d"
+  },
+  {
+    name: "Family Company s.r.o.",
+    logo: "/Family_Company.PNG",
+    color: "#1a365d"
   }
 ];
