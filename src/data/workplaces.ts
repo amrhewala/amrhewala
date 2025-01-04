@@ -11,7 +11,7 @@ export const workplaces = [
   },
   {
     name: "Family Company s.r.o.",
-    logo: "/Family_Company.png",
+    logo: "/lovable-uploads/Family_Company.png",
     color: "#1a365d"
   }
 ];
