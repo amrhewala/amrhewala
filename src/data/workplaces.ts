@@ -6,12 +6,12 @@ export const workplaces = [
   },
   {
     name: "Suez_Canal_University",
-    logo: "/Suez_Canal_University.PNG",
+    logo: "/Suez_Canal_University.png",
     color: "#1a365d"
   },
   {
     name: "Family Company s.r.o.",
-    logo: "/Family_Company.PNG",
+    logo: "/Family_Company.png",
     color: "#1a365d"
   }
 ];
