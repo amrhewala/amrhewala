@@ -6,7 +6,7 @@ export const workplaces = [
   },
   {
     name: "Suez_Canal_University",
-    logo: "/Suez_Canal_University.svg",
+    logo: "/Suez_Canal_University.PNG",
     color: "#1a365d"
   }
 ];
