@@ -42,7 +42,7 @@ export const education = [
     description: "Advanced Python programming certification, focusing on data analysis and automation."
   },
   {
-    name: "University of Wien",
+    name: "University of Vienna",
     logo: "/Uni.png",
     color: "#1a365d",
     description: "Studied Development Economics and International Development, gaining valuable academic insights."
