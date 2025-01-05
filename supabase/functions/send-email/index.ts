@@ -14,12 +14,15 @@ interface EmailRequest {
 }
 
 const handler = async (req: Request): Promise<Response> => {
+  // Handle CORS preflight requests
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
 
   try {
     const emailRequest: EmailRequest = await req.json();
+    console.log("Received email request:", emailRequest);
+    
     const res = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -54,6 +57,7 @@ const handler = async (req: Request): Promise<Response> => {
       });
     }
   } catch (error: any) {
+    console.error("Error in send-email function:", error);
     return new Response(JSON.stringify({ error: error.message }), {
       status: 500,
       headers: { ...corsHeaders, "Content-Type": "application/json" },
