@@ -49,7 +49,7 @@ export const certificates = [
   },
   {
     name: "SQL Certificate",
-    image: "/lovable-uploads/SQL_Mimo.jpg",
+    image: "/lovable-uploads/SQL_Mimo.png",
     institution: "Mimo",
     color: "#00C853"
   }
