@@ -7,6 +7,7 @@ import { education } from "@/data/education";
 import { workplaces } from "@/data/workplaces";
 import { certificates } from "@/data/certificates";
 import { blogPosts } from "@/data/blog-posts";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const Hero = () => {
   return (
@@ -24,8 +25,7 @@ export const Hero = () => {
       <p className="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in delay-100">
         Senior Data Analysis
       </p>
-       import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
+      
 export const About = () => {
   return (
     <section className="py-24 relative overflow-hidden">
