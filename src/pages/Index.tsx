@@ -7,7 +7,6 @@ import { ContactForm } from "@/components/ContactForm";
 const Index = () => {
   return (
     <main>
-      <About />
       <Hero />
       <About />
       <Experience />

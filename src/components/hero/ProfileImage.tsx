@@ -7,7 +7,7 @@ export const ProfileImage = ({ src, alt }: ProfileImageProps) => {
   return (
     <div className="relative group">
       <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-      <div className="relative w-48 h-48 overflow-hidden rounded-full">
+      <div className="relative w-60 h-60 overflow-hidden rounded-full">
         <img
           src={src}
           alt={alt}
