@@ -25,9 +25,6 @@ export const LogoGrid = () => {
               <p className="text-sm text-muted-foreground">
                 {workplace.description}
               </p>
-              <p className="text-sm text-muted-foreground">
-                {workplace.duration}
-              </p>
             </div>
           </HoverCardContent>
         </HoverCard>

@@ -3,6 +3,7 @@ import { SocialLinks } from "./hero/SocialLinks";
 import { LogoGrid } from "./hero/LogoGrid";
 import { CertificatesCarousel } from "./hero/CertificatesCarousel";
 import { BlogPosts } from "./hero/BlogPosts";
+import { blogPosts } from "@/data/blog-posts";
 
 export const Hero = () => {
   return (
@@ -33,12 +34,15 @@ export const Hero = () => {
           <SocialLinks />
         </div>
         <div className="space-y-8">
-          <ProfileImage />
+          <ProfileImage 
+            src="/lovable-uploads/194265e1-a038-4904-be43-b6ea5e35a693.png"
+            alt="Profile"
+          />
           <LogoGrid />
         </div>
       </div>
       <CertificatesCarousel />
-      <BlogPosts />
+      <BlogPosts posts={blogPosts} />
     </section>
   );
 };
