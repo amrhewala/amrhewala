@@ -33,7 +33,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-sans;
   }
 
   @keyframes fade-in {
@@ -57,18 +57,5 @@
 
   .delay-200 {
     animation-delay: 200ms;
-  }
-
-  /* Improved Typography */
-  h1, h2, h3, h4, h5, h6 {
-    @apply tracking-tight font-semibold;
-  }
-
-  .prose {
-    @apply 
-      prose-headings:text-gray-900 
-      prose-p:text-gray-600 
-      hover:prose-a:text-accent 
-      prose-strong:text-gray-900;
   }
 }

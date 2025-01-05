@@ -40,26 +40,6 @@ export default {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: '65ch',
-            color: 'inherit',
-            a: {
-              color: 'inherit',
-              textDecoration: 'underline',
-              fontWeight: '500',
-            },
-            'h1, h2, h3, h4': {
-              fontWeight: '600',
-              color: 'inherit',
-            },
-            strong: {
-              color: 'inherit',
-            },
-          },
-        },
-      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -76,5 +56,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
