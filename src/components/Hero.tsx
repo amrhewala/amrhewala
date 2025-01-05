@@ -11,7 +11,7 @@ import { blogPosts } from "@/data/blog-posts";
 export const Hero = () => {
   return (
     <div className="min-h-[90vh] flex flex-col justify-center items-center text-center p-4 relative overflow-hidden bg-gradient-to-br from-primary/5 via-accent/10 to-background">
-      <div className="absolute inset-0 bg-grid-white/10 bg-[size:10px_10px] [mask-image:radial-gradient(white,transparent_85%)]" />
+      <div className="absolute inset-0 bg-grid-white/10 bg-[size:20px_20px] [mask-image:radial-gradient(white,transparent_85%)]" />
       
       <ProfileImage 
         src="/lovable-uploads/126b5734-9f0a-4a0b-9a9f-6a9b3dedd1ca.png"
