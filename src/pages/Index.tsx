@@ -1,17 +1,53 @@
-import { Hero } from "@/components/Hero";
+import { ProfileSection } from "@/components/sections/ProfileSection";
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { Portfolio } from "@/components/Portfolio";
 import { ContactForm } from "@/components/ContactForm";
+import { SocialSection } from "@/components/sections/SocialSection";
+import { LogoSection } from "@/components/sections/LogoSection";
+import { CertificatesCarousel } from "@/components/hero/CertificatesCarousel";
+import { BlogPosts } from "@/components/hero/BlogPosts";
+import { certificates } from "@/data/certificates";
+import { blogPosts } from "@/data/blog-posts";
 
 const Index = () => {
   return (
-    <main>
-      <Hero />
-      <About />
-      <Experience />
-      <Portfolio />
-      <ContactForm />
+    <main className="min-h-screen bg-gradient-to-br from-primary/5 via-accent/10 to-background">
+      <div className="absolute inset-0 bg-grid-white/10 bg-[size:20px_20px] [mask-image:radial-gradient(white,transparent_85%)]" />
+      
+      {/* You can reorder these sections by moving them up or down */}
+      <div className="relative">
+        {/* Section 1: Profile */}
+        <ProfileSection />
+        
+        {/* Section 2: About */}
+        <About />
+        
+        {/* Section 3: Social Links */}
+        <SocialSection />
+        
+        {/* Section 4: Logos (Work/Study) */}
+        <LogoSection />
+        
+        {/* Section 5: Certificates */}
+        <div className="py-12">
+          <CertificatesCarousel certificates={certificates} />
+        </div>
+        
+        {/* Section 6: Experience */}
+        <Experience />
+        
+        {/* Section 7: Portfolio */}
+        <Portfolio />
+        
+        {/* Section 8: Blog Posts */}
+        <div className="py-12">
+          <BlogPosts posts={blogPosts} />
+        </div>
+        
+        {/* Section 9: Contact Form */}
+        <ContactForm />
+      </div>
     </main>
   );
 };
