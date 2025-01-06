@@ -2,12 +2,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const About = () => {
   return (
-    <section className="py-12 relative overflow-hidden">
+    <section className="py-8 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5" />
       <div className="container relative">
         <Card className="backdrop-blur-sm bg-white/80 border-none shadow-2xl hover:shadow-accent/20 transition-all duration-500">
-          <CardHeader>
-            <CardTitle className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <CardHeader className="pb-2">
+            <CardTitle className="text-4xl font-bold text-center mb-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               About Me
             </CardTitle>
           </CardHeader>

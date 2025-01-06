@@ -15,8 +15,7 @@ const Index = () => {
     <main className="min-h-screen bg-gradient-to-br from-primary/5 via-accent/10 to-background">
       <div className="absolute inset-0 bg-grid-white/10 bg-[size:20px_20px] [mask-image:radial-gradient(white,transparent_85%)]" />
       
-      {/* You can reorder these sections by moving them up or down */}
-      <div className="relative">
+      <div className="relative space-y-8">
         {/* Section 1: Profile */}
         <ProfileSection />
         
@@ -30,7 +29,7 @@ const Index = () => {
         <LogoSection />
         
         {/* Section 5: Certificates */}
-        <div className="py-12">
+        <div className="py-8">
           <CertificatesCarousel certificates={certificates} />
         </div>
         
@@ -41,7 +40,7 @@ const Index = () => {
         <Portfolio />
         
         {/* Section 8: Blog Posts */}
-        <div className="py-12">
+        <div className="py-8">
           <BlogPosts posts={blogPosts} />
         </div>
         
