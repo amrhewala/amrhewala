@@ -29,8 +29,10 @@ const Index = () => {
         <LogoSection />
         
         {/* Section 5: Certificates */}
-        <div className="py-8">
-          <CertificatesCarousel certificates={certificates} />
+        <div className="py-8 flex justify-center">
+          <div className="w-full max-w-6xl px-4">
+            <CertificatesCarousel certificates={certificates} />
+          </div>
         </div>
         
         {/* Section 6: Experience */}
@@ -40,8 +42,10 @@ const Index = () => {
         <Portfolio />
         
         {/* Section 8: Blog Posts */}
-        <div className="py-8">
-          <BlogPosts posts={blogPosts} />
+        <div className="py-8 flex justify-center">
+          <div className="w-full max-w-6xl px-4">
+            <BlogPosts posts={blogPosts} />
+          </div>
         </div>
         
         {/* Section 9: Contact Form */}
