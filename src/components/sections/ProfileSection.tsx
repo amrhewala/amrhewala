@@ -2,7 +2,7 @@ import { ProfileImage } from "../hero/ProfileImage";
 
 export const ProfileSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center py-6">
+    <section className="flex flex-col items-center justify-center py-1">
       <ProfileImage 
         src="/lovable-uploads/126b5734-9f0a-4a0b-9a9f-6a9b3dedd1ca.png"
         alt="Amr Hewala"
