@@ -3,30 +3,19 @@ import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { Portfolio } from "@/components/Portfolio";
 import { ContactForm } from "@/components/ContactForm";
-import { SocialSection } from "@/components/sections/SocialSection";
-import { LogoSection } from "@/components/sections/LogoSection";
 import { CertificatesCarousel } from "@/components/hero/CertificatesCarousel";
-import { BlogPosts } from "@/components/hero/BlogPosts";
+import { Skills } from "@/components/Skills";
 import { Achievements } from "@/components/Achievements";
+import { Services } from "@/components/Services";
+import { Testimonials } from "@/components/Testimonials";
 import { certificates } from "@/data/certificates";
-import { blogPosts } from "@/data/blog-posts";
 
 // Define sections as an array of objects for easier reordering
 const sections = [
   { id: 'profile', component: <ProfileSection /> },
-  { id: 'social', component: <SocialSection /> },
   { id: 'about', component: <About /> },
-  {    id: 'certificates', 
-    component: (
-      <div className="py-8 flex justify-center">
-        <div className="w-full max-w-6xl px-4">
-          <CertificatesCarousel certificates={certificates} />
-        </div>
-      </div>
-    ) },
-  { id: 'achievements', component: <Achievements /> } 
   { 
-    id: 'certificates', 
+    id: 'education', 
     component: (
       <div className="py-8 flex justify-center">
         <div className="w-full max-w-6xl px-4">
@@ -35,18 +24,12 @@ const sections = [
       </div>
     ) 
   },
+  { id: 'skills', component: <Skills /> },
   { id: 'experience', component: <Experience /> },
+  { id: 'services', component: <Services /> },
   { id: 'portfolio', component: <Portfolio /> },
-  { 
-    id: 'blog', 
-    component: (
-      <div className="py-8 flex justify-center">
-        <div className="w-full max-w-6xl px-4">
-          <BlogPosts posts={blogPosts} />
-        </div>
-      </div>
-    ) 
-  },
+  { id: 'achievements', component: <Achievements /> },
+  { id: 'testimonials', component: <Testimonials /> },
   { id: 'contact', component: <ContactForm /> },
 ];
 
