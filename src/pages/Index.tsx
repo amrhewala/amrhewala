@@ -16,7 +16,15 @@ const sections = [
   { id: 'profile', component: <ProfileSection /> },
   { id: 'social', component: <SocialSection /> },
   { id: 'about', component: <About /> },
-  { id: 'achievements', component: <Achievements /> },
+  {    id: 'certificates', 
+    component: (
+      <div className="py-8 flex justify-center">
+        <div className="w-full max-w-6xl px-4">
+          <CertificatesCarousel certificates={certificates} />
+        </div>
+      </div>
+    ) },
+  { id: 'achievements', component: <Achievements /> } 
   { 
     id: 'certificates', 
     component: (
