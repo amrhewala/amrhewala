@@ -9,11 +9,29 @@ import { Achievements } from "@/components/Achievements";
 import { Services } from "@/components/Services";
 import { Testimonials } from "@/components/Testimonials";
 import { certificates } from "@/data/certificates";
+import { SocialLinks } from "@/components/hero/SocialLinks";
+import { LogoSection } from "@/components/sections/LogoSection";
 
 // Define sections as an array of objects for easier reordering
 const sections = [
-  { id: 'profile', component: <ProfileSection /> },
-  { id: 'about', component: <About /> },
+  { 
+    id: 'profile', 
+    component: (
+      <div className="space-y-4">
+        <ProfileSection />
+        <SocialLinks />
+      </div>
+    )
+  },
+  { 
+    id: 'about', 
+    component: (
+      <div className="space-y-8">
+        <About />
+        <LogoSection />
+      </div>
+    ) 
+  },
   { 
     id: 'education', 
     component: (
