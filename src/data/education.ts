@@ -3,48 +3,38 @@ export const education = [
     name: "Udacity",
     logo: "/udacity.svg",
     color: "#02b3e4",
-    description: "Completed Data Analysis Professional Nanodegree, mastering advanced data analysis techniques and tools."
+    description: `Data Analysis Professional Nanodegree Program (Jan 2023 - Mar 2033)
+
+Tools & Skills Gained:
+• Python (Datatypes, Data Structures, Conditions, Loops, Functions, Scripting)
+• Python Libraries: NumPy, Pandas, Matplotlib
+• Data Analysis techniques (Gathering, Cleaning, Preprocessing Data)
+• Foundations of Agile
+• Managing Freelancing Projects and Platforms
+
+Projects Completed:
+1. Python Data Exploration: Imported and analyzed data using descriptive statistics
+2. Data Analysis with Python Libraries: Used NumPy, Pandas, and Matplotlib for dataset analysis
+3. Freelance Project Management: Managed project using Trello, handled client communication and project planning
+
+Skills: Matplotlib, Data Manipulation, EDA, Python, Pandas, Visualization, Data Cleaning, NumPy`,
   },
   {
-    name: "Google",
-    logo: "/Google__G__logo.svg.png",
-    color: "#4285F4",
-    description: "Earned Google Data Analytics Certificate, focusing on data analysis and visualization."
-  },
-  {
-    name: "Power-BI",
-    logo: "/Power-BI.png",
-    color: "#F2C811",
-    description: "Mastered Power BI for creating interactive data visualizations and business intelligence reports."
-  },
-  {
-    name: "U-M",
-    logo: "/U-M_Logo-Hex.png",
-    color: "#00274C",
-    description: "Completed Python specialization courses, including data structures and programming fundamentals."
-  },
-  {
-    name: "Coursera",
-    logo: "/coursera-vector-logo-2022.png",
-    color: "#0056D2",
-    description: "Completed various courses in data analysis, programming, and project management."
-  },
-  {
-    name: "Data Analytics",
-    logo: "/data-analytics.jpg",
+    name: "Suez Canal University",
+    logo: "/Suez_Canal_University.png",
     color: "#1a365d",
-    description: "Specialized training in data analytics, including statistical analysis and data visualization."
-  },
-  {
-    name: "Python",
-    logo: "/python.png",
-    color: "#3776AB",
-    description: "Advanced Python programming certification, focusing on data analysis and automation."
+    description: "Master of Business Administration (MBA), Business Administration and Management (2014-2015). Member of university volleyball team. Skills: Data Analytics, Accounting Standards",
   },
   {
     name: "University of Vienna",
-    logo: "/Uni.png",
+    logo: "/U-M_Logo-Hex.png",
+    color: "#00274C",
+    description: "Master's degree in Development Economics and International Development (2016-2019)",
+  },
+  {
+    name: "Suez Canal University",
+    logo: "/Suez_Canal_University.png",
     color: "#1a365d",
-    description: "Studied Development Economics and International Development, gaining valuable academic insights."
-  }
+    description: "Bachelor's degree in Science & Education, Mathematics (2000-2005). Active member of the university volleyball team.",
+  },
 ];

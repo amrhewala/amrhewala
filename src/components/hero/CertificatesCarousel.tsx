@@ -22,9 +22,9 @@ interface CertificatesCarouselProps {
 export const CertificatesCarousel = ({ certificates }: CertificatesCarouselProps) => {
   return (
     <div className="w-full max-w-4xl mb-12 animate-fade-in delay-300">
-      <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+      <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
         Certificates & Experience
-      </h2>
+      </h1>
       <Carousel className="w-full">
         <CarouselContent>
           {certificates.map((item, index) => (
