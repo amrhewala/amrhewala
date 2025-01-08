@@ -49,6 +49,6 @@ Activities and societies: Member of volleyball team`,
     logo: "/Power-BI.png",
     color: "#1a365d",
     description: "Power Bi",
-    fullDescription:''
+    fullDescription:'',
   },
 ];
