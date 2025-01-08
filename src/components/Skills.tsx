@@ -56,24 +56,6 @@ export const Skills = () => {
           date: "June 2009",
           image: "/lovable-uploads/7369b8dd-7b33-41b0-9e51-4d4dd5b26fee.png"
         },
-        {
-          name: "Python for Everybody Specialization",
-          institution: "University of Michigan",
-          date: "March 2023",
-          image: "/lovable-uploads/d56bfdb9-510b-4121-ba2b-ce8648b8d7c1.png"
-        },
-        {
-          name: "Programming for Everybody",
-          institution: "University of Michigan",
-          date: "February 2023",
-          image: "/lovable-uploads/9bed7b39-ab47-4b72-862d-e1c4305fa23b.png"
-        },
-        {
-          name: "Python Data Structures",
-          institution: "University of Michigan",
-          date: "March 2023",
-          image: "/lovable-uploads/02c3dbc7-7c51-4b68-bb19-7d9b19273448.png"
-        }
       ]
     },
     { 
@@ -116,18 +98,6 @@ export const Skills = () => {
           date: "July 2008",
           image: "/lovable-uploads/4f7a9098-4d5d-46a9-8c79-a37f1df342aa.png"
         },
-        {
-          name: "Python Certificate",
-          institution: "Mimo",
-          date: "March 2023",
-          image: "/lovable-uploads/1df94969-f34d-4b9c-8d9b-9e88ad918718.png"
-        },
-        {
-          name: "SQL Certificate",
-          institution: "Mimo",
-          date: "March 2023",
-          image: "/lovable-uploads/SQL_Mimo.png"
-        }
       ]
     },
     { 
@@ -146,18 +116,6 @@ export const Skills = () => {
           date: "Summer 2004/05",
           image: "/lovable-uploads/8d75844c-a5bd-48f7-aab0-d99addd1470d.png"
         },
-        {
-          name: "Foundations: Data, Data, Everywhere",
-          institution: "Google",
-          date: "March 2023",
-          image: "/lovable-uploads/523901b7-9331-4140-8002-903ccd25c740.png"
-        },
-        {
-          name: "Data Analysis Professional",
-          institution: "Udacity",
-          date: "March 2023",
-          image: "/lovable-uploads/172e0c7c-a193-4534-9af7-393e8daadfb2.png"
-        }
       ]
     }
   ];
