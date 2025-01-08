@@ -11,7 +11,6 @@ import { Testimonials } from "@/components/Testimonials";
 import { certificates } from "@/data/certificates";
 import { SocialLinks } from "@/components/hero/SocialLinks";
 import { LogoSection } from "@/components/sections/LogoSection";
-import { EducationDetails } from "@/components/sections/EducationDetails";
 
 const sections = [
   { 
@@ -29,7 +28,6 @@ const sections = [
       <div className="space-y-8">
         <About />
         <LogoSection />
-        <EducationDetails />
       </div>
     ) 
   },
