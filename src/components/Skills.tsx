@@ -74,13 +74,7 @@ export const Skills = () => {
           date: "May 2010",
           image: "/lovable-uploads/ed6529f6-27aa-463f-969b-6d44fa68f316.png"
         },
-        {
-          name: "Foundations of Project Management",
-          institution: "Google",
-          date: "March 2023",
-          image: "/lovable-uploads/194265e1-a038-4904-be43-b6ea5e35a693.png"
-        }
-      ]
+       ]
     },
     { 
       name: "Computer Skills", 
