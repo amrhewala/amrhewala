@@ -1,5 +1,6 @@
 import { education } from "@/data/education";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "@/components/ui/image";
 
 export const EducationDetails = () => {
   return (
@@ -12,13 +13,24 @@ export const EducationDetails = () => {
           {education.map((edu, index) => (
             <Card key={index} className="backdrop-blur-sm bg-white/80 border-none shadow-lg hover:shadow-accent/20 transition-all duration-500">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-primary mb-2">{edu.name}</h3>
-                <div className="prose prose-sm max-w-none text-gray-700">
-                  {edu.fullDescription.split('\n').map((line, i) => (
-                    <p key={i} className="mb-2">
-                      {line}
-                    </p>
-                  ))}
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <img 
+                      src={edu.logo} 
+                      alt={edu.name} 
+                      className="w-12 h-12 object-contain"
+                    />
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="text-2xl font-bold text-primary mb-2">{edu.name}</h3>
+                    <div className="prose prose-sm max-w-none text-gray-700">
+                      {edu.fullDescription.split('\n').map((line, i) => (
+                        <p key={i} className="mb-2">
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
