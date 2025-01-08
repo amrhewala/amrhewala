@@ -3,7 +3,7 @@ export const education = [
     name: "Udacity",
     logo: "/udacity.svg",
     color: "#02b3e4",
-    description: `Data Analysis Professional Nanodegree Program (Jan 2023 - Mar 2033)
+    description: "Data Analysis Professional Nanodegree Program (Jan 2023 - Mar 2033)",
     fullDescription: `Nanodegree Program, Data Analysis Professional
 Jan 2023 - Mar 2033
 Tools I gained through the course:
@@ -49,6 +49,6 @@ Activities and societies: Member of volleyball team`,
     logo: "/Power-BI.png",
     color: "#1a365d",
     description: "Power Bi",
-    fullDescription:'',
+    fullDescription: "",
   },
 ];
