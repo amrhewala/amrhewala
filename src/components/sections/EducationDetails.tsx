@@ -1,6 +1,5 @@
 import { education } from "@/data/education";
 import { Card, CardContent } from "@/components/ui/card";
-import Image from "@/components/ui/image";
 
 export const EducationDetails = () => {
   return (
