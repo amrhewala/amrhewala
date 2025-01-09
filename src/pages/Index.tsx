@@ -23,16 +23,16 @@ const sections = [
       </div>
     )
   },
-  { id: 'logos', component: <LogoSection /> },
   { 
     id: 'about', 
     component: (
       <div className="space-y-8">
         <About />
-        <EducationDetails />
       </div>
     ) 
   },
+  { id: 'logos', component: <LogoSection /> },
+  { id: 'education-details', component: <EducationDetails /> },
   { 
     id: 'education', 
     component: (
