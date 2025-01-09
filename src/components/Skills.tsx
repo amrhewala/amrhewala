@@ -56,6 +56,12 @@ export const Skills = () => {
           date: "June 2009",
           image: "/lovable-uploads/7369b8dd-7b33-41b0-9e51-4d4dd5b26fee.png"
         },
+        {
+          name: "BSRC Certificate",
+          institution: "Ain Shams University",
+          date: "December 2010",
+          image: "/lovable-uploads/a7564736-c35e-4778-91db-6d4895983d4c.png"
+        },
       ]
     },
     { 
@@ -74,7 +80,13 @@ export const Skills = () => {
           date: "May 2010",
           image: "/lovable-uploads/ed6529f6-27aa-463f-969b-6d44fa68f316.png"
         },
-       ]
+        {
+          name: "Change Management and Career Development",
+          institution: "ESLSCA Business School",
+          date: "January 2019",
+          image: "/lovable-uploads/b6b51ff1-7f24-4a5e-a75f-37b5afeb1809.png"
+        },
+      ]
     },
     { 
       name: "Computer Skills", 
@@ -109,6 +121,18 @@ export const Skills = () => {
           institution: "The American University in Cairo",
           date: "Summer 2004/05",
           image: "/lovable-uploads/8d75844c-a5bd-48f7-aab0-d99addd1470d.png"
+        },
+      ]
+    },
+    { 
+      name: "Language Training", 
+      description: "Language proficiency and communication skills",
+      certificates: [
+        {
+          name: "English Studies - ETLS Level 1",
+          institution: "The American University in Cairo",
+          date: "Spring 2006",
+          image: "/lovable-uploads/33a8947c-f5ec-4874-baac-f03a0d8ac4aa.png"
         },
       ]
     }
@@ -149,7 +173,7 @@ export const Skills = () => {
           <Card className="bg-white/5 backdrop-blur-sm border border-accent/20">
             <CardHeader>
               <CardTitle className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Soft Skills & Certifications
+                Soft Skills & Short Training
               </CardTitle>
             </CardHeader>
             <CardContent>
