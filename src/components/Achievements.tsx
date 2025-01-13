@@ -3,10 +3,16 @@ import { Badge } from "@/components/ui/badge";
 import { Trophy } from "lucide-react";
 
 const achievements = [
-  {
-    title: "Data Analysis Excellence",
-    description: "Successfully computerized all processes at GAFI's financial department",
-    year: "2018",
+   title: "Highly Commended – Suez Free Zone, Egypt",
+    description: `
+      Led a team in crafting the winning proposal for the Suez Free Zone, recognized as "Highly Commended" in the Global Free Zones of the Year 2023 Awards. 
+      Leveraged expertise in data analysis, strategic communication, and report writing to highlight the Free Zone’s innovative strategies and achievements. 
+      Showcased the Zone’s focus on attracting labor-intensive projects, enriching local expertise, and fostering innovation. 
+      Highlighted key investments from global companies like Galaxy Chemicals and Schneider Electric, creating over 900 jobs, and the Zone’s support for SMEs through flexible leasing arrangements and tailored services. 
+      Also emphasized sustainability initiatives, including promoting electric vehicles and decarbonization efforts.
+    `,
+    link: "https://www.fdiintelligence.com/content/rankings-and-awards/global-free-zones-of-the-year-2023-awards-best-zones-overall-83065",
+    date: "2023",
   },
   {
     title: "Entrepreneurial Success",
