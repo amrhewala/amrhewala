@@ -5,6 +5,7 @@ import { Award } from "lucide-react";
 interface Achievement {
   title: string;
   description: string;
+  subtitle: string;
   year: string;
   photos?: string[];
   link?: string;
@@ -12,8 +13,8 @@ interface Achievement {
 // Define the achievements array
 const achievements: Achievement[] = [
   {
-    title: "Prize: Highly Commended – Suez Free Zone, Egypt
-Global Free Zones of the Year 2023 Awards by fDi Intelligence",
+    title: "Prize: Highly Commended – Suez Free Zone, Egypt",
+    subtitle : "Global Free Zones of the Year 2023 Awards by fDi Intelligence",
     description: "I am proud to have led a team in crafting the winning proposal for the Suez Free Zone, which was recognized as "Highly Commended" in the Global Free Zones of the Year 2023 Awards. Leveraging my expertise in data analysis, strategic communication, and report writing, I collaborated with my team to highlight the Free Zone’s innovative strategies and achievements.
 
 Our submission showcased how the Suez Free Zone has become a hub for knowledge, expertise, and innovation, attracting significant investments and creating thousands of jobs. Key highlights included:
