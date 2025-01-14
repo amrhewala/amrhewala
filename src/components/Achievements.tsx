@@ -34,16 +34,7 @@ This recognition underscores my ability to lead teams, analyze complex data, and
     ],
     link: "https://www.fdiintelligence.com/content/rankings-and-awards/global-free-zones-of-the-year-2023-awards-best-zones-overall-83065"
   },
-  {
-    title: "Entrepreneurial Success",
-    description: "Led a successful startup company in Europe for 4 years",
-    year: "2015-2018"
-  },
-  {
-    title: "Database Innovation",
-    description: "Created comprehensive database system covering 2008 to present",
-    year: "2008-Present"
-  }
+
 ];
 export const Achievements = () => {
   return (
