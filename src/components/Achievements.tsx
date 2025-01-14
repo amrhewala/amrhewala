@@ -2,8 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Trophy } from "lucide-react";
 
-const achievements = [
-   title: "Highly Commended – Suez Free Zone, Egypt",
+const achievements = {
+    title: "Highly Commended – Suez Free Zone, Egypt",
     description: `
       Led a team in crafting the winning proposal for the Suez Free Zone, recognized as "Highly Commended" in the Global Free Zones of the Year 2023 Awards. 
       Leveraged expertise in data analysis, strategic communication, and report writing to highlight the Free Zone’s innovative strategies and achievements. 
@@ -12,7 +12,11 @@ const achievements = [
       Also emphasized sustainability initiatives, including promoting electric vehicles and decarbonization efforts.
     `,
     link: "https://www.fdiintelligence.com/content/rankings-and-awards/global-free-zones-of-the-year-2023-awards-best-zones-overall-83065",
-    date: "2023",
+    year: "2023",
+    photos: [
+      "/images/suez-free-zone-1.jpg", // Replace with your actual image paths
+      "/images/suez-free-zone-2.jpg", // Replace with your actual image paths
+    ],
   },
   {
     title: "Entrepreneurial Success",
