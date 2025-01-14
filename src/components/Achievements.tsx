@@ -14,8 +14,8 @@ const achievements = {
     link: "https://www.fdiintelligence.com/content/rankings-and-awards/global-free-zones-of-the-year-2023-awards-best-zones-overall-83065",
     year: "2023",
     photos: [
-      "/images/suez-free-zone-1.jpg", // Replace with your actual image paths
-      "/images/suez-free-zone-2.jpg", // Replace with your actual image paths
+      "/public/CONGRATULATIONS.jpg", // Replace with your actual image paths
+      "/public/CONGRATULATIONS.jpeg", // Replace with your actual image paths
     ],
   },
   {
