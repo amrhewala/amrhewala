@@ -28,7 +28,7 @@ SME Support: Implementing flexible leasing arrangements, tailored support servic
 Sustainability Initiatives: Promoting electric vehicle adoption, sustainability training, and decarbonization efforts to align with net-zero targets.
 
 This recognition underscores my ability to lead teams, analyze complex data, and communicate impactful insights through compelling reports. It also reflects my commitment to driving meaningful outcomes that contribute to economic growth and sustainability.",
-    year: "2023",
+    year: "2025",
     photos: [
       "/CONGRATULATIONS.jpg",
       "/FDI LOGO.jpeg"
