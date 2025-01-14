@@ -16,7 +16,7 @@ const achievements: Achievement[] = [
     description: "Led a team in crafting the winning proposal for the Suez Free Zone, recognized as \"Highly Commended\" in the Global Free Zones of the Year 2023 Awards. Leveraged expertise in data analysis, strategic communication, and report writing to highlight the Free Zone's innovative strategies and achievements. Showcased the Zone's focus on attracting labor-intensive projects, enriching local expertise, and fostering innovation. Highlighted key investments from global companies like Galaxy Chemicals and Schneider Electric, creating over 900 jobs, and the Zone's support for SMEs through flexible leasing arrangements and tailored services. Also emphasized sustainability initiatives, including promoting electric vehicles and decarbonization efforts.",
     year: "2023",
     photos: [
-      "/lovable-uploads/d1fc3a80-6a16-4a51-8fcb-6ac81beac217.png",
+      "/CONGRATULATIONS.jpg",
       "/lovable-uploads/f85eb75f-c64d-4d76-bdd5-6d964a32ed8f.png"
     ],
     link: "https://www.fdiintelligence.com/content/rankings-and-awards/global-free-zones-of-the-year-2023-awards-best-zones-overall-83065"
