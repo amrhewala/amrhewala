@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award } from "lucide-react";
+
 // Define the type for achievement items
 interface Achievement {
   title: string;
@@ -10,12 +11,13 @@ interface Achievement {
   photos?: string[];
   link?: string;
 }
+
 // Define the achievements array
 const achievements: Achievement[] = [
   {
     title: "Prize: Highly Commended – Suez Free Zone, Egypt",
-    subtitle : "Global Free Zones of the Year 2023 Awards by fDi Intelligence",
-    description: "I am proud to have led a team in crafting the winning proposal for the Suez Free Zone, which was recognized as "Highly Commended" in the Global Free Zones of the Year 2023 Awards. Leveraging my expertise in data analysis, strategic communication, and report writing, I collaborated with my team to highlight the Free Zone’s innovative strategies and achievements.
+    subtitle: "Global Free Zones of the Year 2023 Awards by fDi Intelligence",
+    description: `I am proud to have led a team in crafting the winning proposal for the Suez Free Zone, which was recognized as "Highly Commended" in the Global Free Zones of the Year 2023 Awards. Leveraging my expertise in data analysis, strategic communication, and report writing, I collaborated with my team to highlight the Free Zone's innovative strategies and achievements.
 
 Our submission showcased how the Suez Free Zone has become a hub for knowledge, expertise, and innovation, attracting significant investments and creating thousands of jobs. Key highlights included:
 
@@ -27,16 +29,16 @@ SME Support: Implementing flexible leasing arrangements, tailored support servic
 
 Sustainability Initiatives: Promoting electric vehicle adoption, sustainability training, and decarbonization efforts to align with net-zero targets.
 
-This recognition underscores my ability to lead teams, analyze complex data, and communicate impactful insights through compelling reports. It also reflects my commitment to driving meaningful outcomes that contribute to economic growth and sustainability.",
+This recognition underscores my ability to lead teams, analyze complex data, and communicate impactful insights through compelling reports. It also reflects my commitment to driving meaningful outcomes that contribute to economic growth and sustainability.`,
     year: "2025",
     photos: [
       "/CONGRATULATIONS.jpg",
       "/FDI LOGO.jpeg"
     ],
     link: "https://www.fdiintelligence.com/content/rankings-and-awards/global-free-zones-of-the-year-2023-awards-best-zones-overall-83065"
-  },
-
+  }
 ];
+
 export const Achievements = () => {
   return (
     <section className="py-8 relative bg-[#F1F0FB]">
@@ -90,4 +92,5 @@ export const Achievements = () => {
     </section>
   );
 };
+
 export default Achievements;
