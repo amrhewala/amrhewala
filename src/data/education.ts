@@ -4,12 +4,23 @@ export const education = [
     logo: "/Power-BI.png",
     color: "#1a365d",
     description: "Data Analytics - Microsoft Power BI Engineer - (Jan 2024 - Apr 2025) ",
-    fullDescription: `Power BI Engineer is responsible for collecting, analyzing, and visualizing data from various sources using Azure services.
-  They analyze massive amounts of data to find trends, patterns, and insights that can make informed business decisions.
-  A Microsoft Enterprise Data Analyst's roles and responsibilities are a combination of technical and management roles.
-  Microsoft Enterprise Data Analysts collect and analyze data to identify trends and patterns,
-  build predictive models using machine learning algorithms, create dashboards and reports to visualize data,
-  identify and correct data quality issues, collaborate with business stakeholders to understand their data needs, and update data analytics tools and technologies.`,
+    fullDescription: `Digital Egypt Pioneers Initiative (DEPI) – Microsoft Power BI Engineer Track Offered by the Ministry of Communications and Information Technology (MCIT),
+    this scholarship focuses on data analytics using Microsoft Power BI and Azure services.
+    Participants will gain expertise in collecting, analyzing, and visualizing data to extract meaningful insights for informed decision-making.
+Key Learning Outcomes:
+Data collection, cleaning, and integration from various sources
+Building interactive dashboards and reports using Power BI
+Utilizing DAX for advanced calculations and data analysis
+Developing predictive models with machine learning
+Understanding data governance and quality management
+Hands-on experience with Tableau Desktop fundamentals and intermediate concepts
+Course Content:
+Prompt Engineering
+Data Analysis & Data-Driven Decisions
+Power BI (Data Extraction, Cleaning, Modeling, Visualization, Publishing)
+Tableau Desktop (Fundamentals & Intermediate)
+Data Governance
+This track is ideal for aspiring Microsoft Enterprise Data Analysts, combining technical and business skills to drive data-driven strategies.`,
   },
   {
     name: "Udacity",
