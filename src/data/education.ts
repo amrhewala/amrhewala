@@ -1,6 +1,6 @@
 export const education = [
     {
-    name: "Power Bi",
+    name: "Microsoft Power BI Engineer",
     logo: "/Power-BI.png",
     color: "#1a365d",
     description: "DEPI – Microsoft Power BI Engineer scholarship (Jan 2024 - Apr 2025)",
