@@ -4,12 +4,12 @@ export const education = [
     logo: "/Power-BI.png",
     color: "#1a365d",
     description: "Data Analytics - Microsoft Power BI Engineer - (Jan 2024 - Apr 2025) ",
-    fullDescription: "Power BI Engineer is responsible for collecting, analyzing, and visualizing data from various sources using Azure services.
+    fullDescription: `Power BI Engineer is responsible for collecting, analyzing, and visualizing data from various sources using Azure services.
   They analyze massive amounts of data to find trends, patterns, and insights that can make informed business decisions.
   A Microsoft Enterprise Data Analyst's roles and responsibilities are a combination of technical and management roles.
   Microsoft Enterprise Data Analysts collect and analyze data to identify trends and patterns,
   build predictive models using machine learning algorithms, create dashboards and reports to visualize data,
-  identify and correct data quality issues, collaborate with business stakeholders to understand their data needs, and update data analytics tools and technologies.",
+  identify and correct data quality issues, collaborate with business stakeholders to understand their data needs, and update data analytics tools and technologies.`,
   },
   {
     name: "Udacity",
@@ -55,6 +55,5 @@ Skills: Data Analytics · Accounting Standards`,
     fullDescription: `Bachelor's degree in Science & Education, Mathematics
 2000 - 2005
 Activities and societies: Member of volleyball team`,
-  },
-
+  }
 ];
