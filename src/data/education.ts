@@ -3,7 +3,7 @@ export const education = [
     name: "Power Bi",
     logo: "/Power-BI.png",
     color: "#1a365d",
-    description: "Data Analytics - Microsoft Power BI Engineer - (Jan 2024 - Apr 2025) ",
+    description: "DEPI – Microsoft Power BI Engineer scholarship (Jan 2024 - Apr 2025)",
     fullDescription: `Digital Egypt Pioneers Initiative (DEPI) – Microsoft Power BI Engineer Track Offered by the Ministry of Communications and Information Technology (MCIT),
     this scholarship focuses on data analytics using Microsoft Power BI and Azure services.
     Participants will gain expertise in collecting, analyzing, and visualizing data to extract meaningful insights for informed decision-making.
@@ -19,8 +19,7 @@ Prompt Engineering
 Data Analysis & Data-Driven Decisions
 Power BI (Data Extraction, Cleaning, Modeling, Visualization, Publishing)
 Tableau Desktop (Fundamentals & Intermediate)
-Data Governance
-This track is ideal for aspiring Microsoft Enterprise Data Analysts, combining technical and business skills to drive data-driven strategies.`,
+Data Governance`,
   },
   {
     name: "Udacity",
