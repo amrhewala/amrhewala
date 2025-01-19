@@ -15,15 +15,16 @@ export type SoftSkill = {
 };
 
 export const skills: SkillOrLanguage[] = [
-  { name: "Python", level: "advanced" },
-  { name: "Panda", level: "expert" },
   { name: "Power BI", level: "expert" },
+  { name: "Panda", level: "expert" },
   { name: "SQL", level: "expert" },
+  { name: "Python", level: "advanced" },
+
 ];
 
 export const languages: SkillOrLanguage[] = [
-  { name: "English", level: "advanced" },
   { name: "Arabic", level: "native" },
+  { name: "English", level: "advanced" },
   { name: "German", level: "basic" },
 ];
 
