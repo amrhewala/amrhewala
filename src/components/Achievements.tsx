@@ -17,19 +17,19 @@ const achievements: Achievement[] = [
   {
     title: "Prize: Highly Commended – Suez Free Zone, Egypt",
     subtitle: "Global Free Zones of the Year 2023 Awards by fDi Intelligence",
-    description: `I am proud to have led a team in crafting the winning proposal for the Suez Free Zone, which was recognized as "Highly Commended" in the Global Free Zones of the Year 2023 Awards. Leveraging my expertise in data analysis, strategic communication, and report writing, I collaborated with my team to highlight the Free Zone's innovative strategies and achievements.
+    description: `I am proud to have led a team in crafting the winning proposal that earned the Suez Free Zone a "Highly Commended" recognition in the Global Free Zones of the Year 2023 Awards, an international competition organized by the Financial Times' FDI Intelligence to showcase the best free zone practices worldwide.
 
-Our submission showcased how the Suez Free Zone has become a hub for knowledge, expertise, and innovation, attracting significant investments and creating thousands of jobs. Key highlights included:
+Leveraging my expertise in data analysis, strategic communication, and report writing, I worked closely with my team to highlight the Free Zone's innovative strategies, economic impact, and sustainability efforts. Our submission demonstrated how the Suez Free Zone has evolved into a hub for knowledge, expertise, and investment, attracting global corporations and fostering local economic growth.
 
-Strategic Focus: Attracting labor-intensive projects to enrich local expertise and foster innovation.
+Key Contributions & Achievements:
+* Strategic Investment Focus: Attracting labor-intensive projects to enhance local expertise and drive industrial innovation.
+* Major Global Investments: Showcasing expansions by Galaxy Chemicals and Schneider Electric, leading to over 900 new jobs.
+* Empowering SMEs: Implementing flexible leasing models, tailored support services, and industry clusters to strengthen small and medium enterprises.
+* Sustainability Leadership: Advancing electric vehicle adoption, sustainability training, and decarbonization efforts to align with global net-zero goals.
 
-Notable Investments: Securing expansions by global companies like Galaxy Chemicals and Schneider Electric, creating over 900 jobs.
+This recognition not only underscores my ability to lead teams, analyze complex data, and develop compelling reports, but also highlights my commitment to driving economic growth, fostering innovation, and promoting sustainability in free zones.
 
-SME Support: Implementing flexible leasing arrangements, tailored support services, and industry clusters to empower small and medium enterprises.
-
-Sustainability Initiatives: Promoting electric vehicle adoption, sustainability training, and decarbonization efforts to align with net-zero targets.
-
-This recognition underscores my ability to lead teams, analyze complex data, and communicate impactful insights through compelling reports. It also reflects my commitment to driving meaningful outcomes that contribute to economic growth and sustainability.`,
+#SuezFreeZone #FDIIntelligence #GlobalFreeZones #FinancialTimes #EconomicGrowth #DataAnalysis #Leadership`,
     year: "2023",
     photos: [
       "/CONGRATULATIONS.png",
