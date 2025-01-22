@@ -32,9 +32,10 @@ Sustainability Initiatives: Promoting electric vehicle adoption, sustainability 
 This recognition underscores my ability to lead teams, analyze complex data, and communicate impactful insights through compelling reports. It also reflects my commitment to driving meaningful outcomes that contribute to economic growth and sustainability.`,
     year: "2023",
     photos: [
-      "/CONGRATULATIONS.jpg",
+      "/CONGRATULATIONS.png",
       "/FDI LOGO.png",
-      "/FDI LOGO.png"
+      "/2023-2.png",
+      "/Suez free zone.png"
     ],
     link: "https://www.fdiintelligence.com/content/rankings-and-awards/global-free-zones-of-the-year-2023-awards-best-zones-overall-83065"
   }
