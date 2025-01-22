@@ -30,10 +30,10 @@ SME Support: Implementing flexible leasing arrangements, tailored support servic
 Sustainability Initiatives: Promoting electric vehicle adoption, sustainability training, and decarbonization efforts to align with net-zero targets.
 
 This recognition underscores my ability to lead teams, analyze complex data, and communicate impactful insights through compelling reports. It also reflects my commitment to driving meaningful outcomes that contribute to economic growth and sustainability.`,
-    year: "2025",
+    year: "2023",
     photos: [
       "/CONGRATULATIONS.jpg",
-      "/FDI LOGO.jpeg"
+      "/FDI LOGO.png"
     ],
     link: "https://www.fdiintelligence.com/content/rankings-and-awards/global-free-zones-of-the-year-2023-awards-best-zones-overall-83065"
   }
