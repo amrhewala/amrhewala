@@ -30,7 +30,7 @@ Key Contributions & Achievements:
 This recognition not only underscores my ability to lead teams, analyze complex data, and develop compelling reports, but also highlights my commitment to driving economic growth, fostering innovation, and promoting sustainability in free zones.
 
 #SuezFreeZone #FDIIntelligence #GlobalFreeZones #FinancialTimes #EconomicGrowth #DataAnalysis #Leadership`,
-    year: "2023",
+    year: "Global Free Zones of the Year 2023 Awards",
     photos: [
       "/CONGRATULATIONS.png",
       "/FDI LOGO.png",
