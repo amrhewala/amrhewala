@@ -33,6 +33,7 @@ This recognition underscores my ability to lead teams, analyze complex data, and
     year: "2023",
     photos: [
       "/CONGRATULATIONS.jpg",
+      "/FDI LOGO.png",
       "/FDI LOGO.png"
     ],
     link: "https://www.fdiintelligence.com/content/rankings-and-awards/global-free-zones-of-the-year-2023-awards-best-zones-overall-83065"
