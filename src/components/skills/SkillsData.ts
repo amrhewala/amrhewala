@@ -26,9 +26,6 @@ export const skills: SkillOrLanguage[] = [
   { name: "NumPy", level: "advanced" },
   { name: "Matplotlib", level: "advanced" },
   { name: "SQL", level: "advanced" },
-  { name: "Agile", level: "advanced" },
-  { name: "Business Entrepreneurs Consulting", level: "advanced" },
-
 ];
 
 export const languages: SkillOrLanguage[] = [
