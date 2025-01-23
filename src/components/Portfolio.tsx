@@ -4,7 +4,42 @@ import { Badge } from "@/components/ui/badge";
 const projects = [
   {
     title: "HR Report",
-    description: "This HR Report provides a comprehensive analysis of employee salaries, workforce distribution, and compensation trends. It offers insights into salary distribution by gender, experience levels, and regions while also highlighting overtime hours across departments. The report examines key factors such as employee demographics, bonus allocations, and salary variations across different countries, helping to identify workforce trends and compensation disparities. By leveraging data visualization, this analysis supports strategic decision planning-making in HR management, enabling better resource allocation, equitable pay structures, and improved workforce.",
+    description: "This Power BI dashboard provides a comprehensive overview of employee salaries, workforce distribution, and key HR insights. The report analyzes various aspects, including gender pay distribution, overtime hours by department, employee experience levels, country-wise salary distribution, and bonuses by employee levels.
+
+Key Insights:
+🔹 Employee Demographics:
+
+Total employees: 689
+Male employees: 449 | Female employees: 240
+🔹 Salary Distribution:
+
+Total Salaries: 17M
+Salaries by Gender: Males earn 11M, while females earn 6M, indicating a gender pay gap.
+🔹 Overtime Analysis:
+
+Total overtime hours: 689
+Top departments with highest overtime:
+Manufacturing (140 hrs)
+Quality Control (89 hrs)
+Account Management (84 hrs)
+🔹 Employee Experience & Growth:
+
+Majority of employees have 4-5 years of experience.
+Fewer employees with 7+ years of experience, highlighting potential retention concerns.
+🔹 Regional Salary & Bonus Distribution:
+
+Egypt leads in total salaries and bonuses, followed by UAE, Saudi Arabia, Syria, and Lebanon.
+Bonus distribution varies significantly by employee levels, with Level 2 employees receiving the highest share (48.2%).
+Business Impact & Decision-Making:
+This report helps HR and leadership teams:
+🔹 Identify salary gaps and workforce trends.
+🔹 Optimize overtime management to improve productivity.
+🔹 Analyze retention trends based on experience levels.
+🔹 Enhance compensation strategies for equitable growth.
+
+🔹 This data-driven approach enables better HR planning, employee engagement, and financial efficiency.
+
+#HRAnalytics #PowerBI #SalaryReport #WorkforceInsights #EmployeeEngagement #DataDrivenDecisionMaking",
     technologies: ["Power BI", "Ms Excel","Data Visualization","Data Analysis","Data Cleansing","Data Processing"],
     images: ["/HR_report-Salaries.png", "/HR_report-Salaries-Gender.png"],
     image: "/HR_report-Salaries.png", // Primary display image
