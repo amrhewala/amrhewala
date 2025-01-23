@@ -16,9 +16,18 @@ export type SoftSkill = {
 
 export const skills: SkillOrLanguage[] = [
   { name: "Power BI", level: "expert" },
-  { name: "Panda", level: "expert" },
-  { name: "SQL", level: "expert" },
+  { name: "Data Visualization", level: "advanced" },
+  { name: "Data Cleansing", level: "advanced" },
+  { name: "Data Cleansing", level: "advanced" },
+  { name: "Data Analysis", level: "advanced" },
+  { name: "Data Modeling", level: "advanced" },
   { name: "Python", level: "advanced" },
+  { name: "Panda", level: "expert" },
+  { name: "NumPy", level: "advanced" },
+  { name: "Matplotlib", level: "advanced" },
+  { name: "SQL", level: "advanced" },
+  { name: "Agile", level: "advanced" },
+  { name: "Business Entrepreneurs Consulting", level: "advanced" },
 
 ];
 
