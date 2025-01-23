@@ -4,42 +4,7 @@ import { Badge } from "@/components/ui/badge";
 const projects = [
   {
     title: "HR Report",
-    description: "This Power BI dashboard provides a comprehensive overview of employee salaries, workforce distribution, and key HR insights. The report analyzes various aspects, including gender pay distribution, overtime hours by department, employee experience levels, country-wise salary distribution, and bonuses by employee levels.
-
-Key Insights:
-🔹 Employee Demographics:
-
-Total employees: 689
-Male employees: 449 | Female employees: 240
-🔹 Salary Distribution:
-
-Total Salaries: 17M
-Salaries by Gender: Males earn 11M, while females earn 6M, indicating a gender pay gap.
-🔹 Overtime Analysis:
-
-Total overtime hours: 689
-Top departments with highest overtime:
-Manufacturing (140 hrs)
-Quality Control (89 hrs)
-Account Management (84 hrs)
-🔹 Employee Experience & Growth:
-
-Majority of employees have 4-5 years of experience.
-Fewer employees with 7+ years of experience, highlighting potential retention concerns.
-🔹 Regional Salary & Bonus Distribution:
-
-Egypt leads in total salaries and bonuses, followed by UAE, Saudi Arabia, Syria, and Lebanon.
-Bonus distribution varies significantly by employee levels, with Level 2 employees receiving the highest share (48.2%).
-Business Impact & Decision-Making:
-This report helps HR and leadership teams:
-🔹 Identify salary gaps and workforce trends.
-🔹 Optimize overtime management to improve productivity.
-🔹 Analyze retention trends based on experience levels.
-🔹 Enhance compensation strategies for equitable growth.
-
-🔹 This data-driven approach enables better HR planning, employee engagement, and financial efficiency.
-
-#HRAnalytics #PowerBI #SalaryReport #WorkforceInsights #EmployeeEngagement #DataDrivenDecisionMaking",
+    description: "This Power BI dashboard provides a comprehensive overview of employee salaries, workforce distribution, and key HR insights. The report analyzes various aspects, including gender pay distribution, overtime hours by department, employee experience levels, country-wise salary distribution, and bonuses by employee levels.\n\nKey Insights:\n🔹 Employee Demographics:\n\nTotal employees: 689\nMale employees: 449 | Female employees: 240\n🔹 Salary Distribution:\n\nTotal Salaries: 17M\nSalaries by Gender: Males earn 11M, while females earn 6M, indicating a gender pay gap.\n🔹 Overtime Analysis:\n\nTotal overtime hours: 689\nTop departments with highest overtime:\nManufacturing (140 hrs)\nQuality Control (89 hrs)\nAccount Management (84 hrs)\n🔹 Employee Experience & Growth:\n\nMajority of employees have 4-5 years of experience.\nFewer employees with 7+ years of experience, highlighting potential retention concerns.\n🔹 Regional Salary & Bonus Distribution:\n\nEgypt leads in total salaries and bonuses, followed by UAE, Saudi Arabia, Syria, and Lebanon.\nBonus distribution varies significantly by employee levels, with Level 2 employees receiving the highest share (48.2%).\nBusiness Impact & Decision-Making:\nThis report helps HR and leadership teams:\n🔹 Identify salary gaps and workforce trends.\n🔹 Optimize overtime management to improve productivity.\n🔹 Analyze retention trends based on experience levels.\n🔹 Enhance compensation strategies for equitable growth.\n\n🔹 This data-driven approach enables better HR planning, employee engagement, and financial efficiency.\n\n#HRAnalytics #PowerBI #SalaryReport #WorkforceInsights #EmployeeEngagement #DataDrivenDecisionMaking",
     technologies: ["Power BI", "Ms Excel","Data Visualization","Data Analysis","Data Cleansing","Data Processing"],
     images: ["/HR_report-Salaries.png", "/HR_report-Salaries-Gender.png"],
     image: "/HR_report-Salaries.png", // Primary display image
@@ -75,7 +40,7 @@ export const Portfolio = () => {
                 <CardTitle className="text-2xl group-hover:text-accent transition-colors">{project.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4 text-gray-700">{project.description}</p>
+                <p className="mb-4 text-gray-700 whitespace-pre-line">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, idx) => (
                     <Badge key={idx} variant="outline" className="hover:bg-accent/20 transition-colors">
