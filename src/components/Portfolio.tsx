@@ -5,15 +5,17 @@ const projects = [
   {
     title: "HR Report",
     description: "HR report shows In-depth details of key employee relationships, sectors, management relationships, gender, employee division and branches worldwide",
-    technologies: ["Power BI", "Ms Excel"],
+    technologies: ["Power BI", "Ms Excel","Data Visualization","Data Analysis","Data Cleansing","Data Processing"],
     images: ["/HR_report-Salaries.png", "/HR_report-Salaries-Gender.png"],
     image: "/HR_report-Salaries.png", // Primary display image
   },
   {
-    title: "Customer Management System",
-    description: "Internal tool for customer relationship management.",
-    technologies: ["Angular", "Express", "PostgreSQL"],
-    image: "/placeholder.svg",
+    title: "Sales Analysis Report-Arabic-",
+    description: "Conducted a comprehensive sales analysis from 2009 to 2011, examining key relationships between sales performance, market demand, and various sales categories. This included an in-depth evaluation of sales trends by region, product type, and customer segment, as well as an analysis of distribution patterns and sales dynamics.
+
+Additionally, I identified the primary producers involved in the case (late or on time) and assessed their impact on overall sales performance. A key focus was determining high-impact customer segments, analyzing their influence on demand, and evaluating how location, customer category, and product type shape sales trends.",
+    technologies: ["Power BI", "Ms Excel","Data Visualization","Data Analysis","Data Cleansing","Data Processing"],
+    image: "/Sales_Analysis.png",
   },
 ];
 
