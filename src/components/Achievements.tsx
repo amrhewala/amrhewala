@@ -32,10 +32,10 @@ This recognition not only underscores my ability to lead teams, analyze complex 
 #SuezFreeZone #FDIIntelligence #GlobalFreeZones #FinancialTimes #EconomicGrowth #DataAnalysis #Leadership`,
     year: "Global Free Zones of the Year 2023 Awards",
     photos: [
-      "/CONGRATULATIONS.png",
-      "/FDI LOGO.png",
+      "/CONGRATULATIONS-min.png",
+      "/fDi-FZotY-2023-min.png",
       "/2023-2.png",
-      "/Suez free zone.png"
+      "/Suez free zone-min.png"
     ],
     link: "https://www.fdiintelligence.com/content/rankings-and-awards/global-free-zones-of-the-year-2023-awards-best-zones-overall-83065"
   }
