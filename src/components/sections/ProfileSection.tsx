@@ -13,9 +13,9 @@ export const ProfileSection = () => {
       <p className="text-xl md:text-2xl text-gray-600 mb-4 animate-fade-in delay-100">
         Senior Data Analysis
       </p>
-      <h3 className="text-xl md:text-7xl font-bold mt-4 mb-2 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-fade-in">
+      <p className="text-xl md:text-1xl font-bold mt-4 mb-2 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-fade-in">
         Bridging Data and Business to Drive Economic Success
-      </h3>
+      </p>
     </section>
   );
 };
