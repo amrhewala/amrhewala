@@ -3,8 +3,8 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
-    title: "HR Report 1",
-    description: "HR report shows In-depth details of key employee relationships, sectors, management relationships, gender, employee division and branches worldwide",
+    title: "HR Report",
+    description: "This HR Report provides a comprehensive analysis of employee salaries, workforce distribution, and compensation trends. It offers insights into salary distribution by gender, experience levels, and regions while also highlighting overtime hours across departments. The report examines key factors such as employee demographics, bonus allocations, and salary variations across different countries, helping to identify workforce trends and compensation disparities. By leveraging data visualization, this analysis supports strategic decision planning-making in HR management, enabling better resource allocation, equitable pay structures, and improved workforce.",
     technologies: ["Power BI", "Ms Excel","Data Visualization","Data Analysis","Data Cleansing","Data Processing"],
     images: ["/HR_report-Salaries.png", "/HR_report-Salaries-Gender.png"],
     image: "/HR_report-Salaries.png", // Primary display image
