@@ -51,7 +51,8 @@ export const ContactForm = () => {
           Contact Me
         </h2>
         <h3 className="text-2xl font-bold text-center mb-9 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          Don't be shy , reach out anytime for advice or consulting! The simple ones are free… but if it gets too complicated, I might start charging in coffee! :)
+        Don't be shy, reach out anytime for advice or consulting!
+        The simple ones are free… <br /> but if it gets too complicated, I might start charging in coffee! :)
         </h3>
         
         <div className="grid md:grid-cols-2 gap-8">
