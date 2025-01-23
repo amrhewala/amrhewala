@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
-    title: "HR Report",
+    title: "HR Report 1",
     description: "HR report shows In-depth details of key employee relationships, sectors, management relationships, gender, employee division and branches worldwide",
     technologies: ["Power BI", "Ms Excel","Data Visualization","Data Analysis","Data Cleansing","Data Processing"],
     images: ["/HR_report-Salaries.png", "/HR_report-Salaries-Gender.png"],
