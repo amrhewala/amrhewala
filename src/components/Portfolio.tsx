@@ -6,7 +6,8 @@ const projects = [
     title: "HR Report",
     description: "HR report shows In-depth details of key employee relationships, sectors, management relationships, gender, employee division and branches worldwide",
     technologies: ["Power BI", "Ms Excel"],
-    image: "/HR_report-Salaries.png",
+    images: ["/HR_report-Salaries.png", "/HR_report-Salaries-Gender.png"],
+    image: "/HR_report-Salaries.png", // Primary display image
   },
   {
     title: "Customer Management System",
