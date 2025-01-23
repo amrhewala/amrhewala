@@ -6,7 +6,8 @@ const projects = [
     title: "Telecom Service Portal",
     description: "Enterprise portal for managing telecom services and customer data.",
     technologies: ["React", "Node.js", "MongoDB"],
-    image: "/placeholder.svg",
+    image: "/HR_report-Salaries.png",
+           "/HR_report-Salaries-Gender.png",
   },
   {
     title: "Customer Management System",
