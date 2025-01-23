@@ -50,6 +50,9 @@ export const ContactForm = () => {
         <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           Contact Me
         </h2>
+        <h3 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          Contact Me
+        </h3>
         
         <div className="grid md:grid-cols-2 gap-8">
           <Card className="bg-white/5 backdrop-blur-sm border border-accent/20">
