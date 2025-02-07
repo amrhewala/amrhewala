@@ -45,8 +45,7 @@ export const TechnicalSkills = ({ skills, getProgressValue }: TechnicalSkillsPro
                     </div>
                     <Progress 
                       value={getProgressValue(skill.level)} 
-                      className="h-2"
-                      indicatorClassName={getLevelColor(skill.level)}
+                      className={`h-2 ${getLevelColor(skill.level)}`}
                     />
                   </div>
                 ))}

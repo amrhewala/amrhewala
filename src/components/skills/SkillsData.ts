@@ -65,9 +65,9 @@ export const skills: SkillOrLanguage[] = [
 ];
 
 export const languages: SkillOrLanguage[] = [
-  { name: "Arabic", level: "native" },
-  { name: "English", level: "advanced" },
-  { name: "German", level: "basic" },
+  { name: "Arabic", level: "native", category: "Languages" },
+  { name: "English", level: "advanced", category: "Languages" },
+  { name: "German", level: "basic", category: "Languages" },
 ];
 
 export const softSkills: SoftSkill[] = [
