@@ -1,6 +1,7 @@
 export type SkillOrLanguage = {
   name: string;
   level: string;
+  category: string;
 };
 
 export type SoftSkill = {
@@ -15,17 +16,52 @@ export type SoftSkill = {
 };
 
 export const skills: SkillOrLanguage[] = [
-  { name: "Power BI", level: "expert" },
-  { name: "Data Visualization", level: "advanced" },
-  { name: "Data Cleansing", level: "advanced" },
-  { name: "Data Cleansing", level: "advanced" },
-  { name: "Data Analysis", level: "advanced" },
-  { name: "Data Modeling", level: "advanced" },
-  { name: "Python", level: "advanced" },
-  { name: "Panda", level: "expert" },
-  { name: "NumPy", level: "advanced" },
-  { name: "Matplotlib", level: "advanced" },
-  { name: "SQL", level: "advanced" },
+  { name: "Microsoft Power BI", level: "expert", category: "Data Analysis & Visualization" },
+  { name: "Data Analysis", level: "expert", category: "Data Analysis & Visualization" },
+  { name: "Statistical Analysis", level: "advanced", category: "Data Analysis & Visualization" },
+  { name: "Data Visualization", level: "expert", category: "Data Analysis & Visualization" },
+  { name: "Exploratory Data Analysis (EDA)", level: "advanced", category: "Data Analysis & Visualization" },
+  { name: "Business Intelligence", level: "expert", category: "Data Analysis & Visualization" },
+  { name: "Quantitative Analytics", level: "advanced", category: "Data Analysis & Visualization" },
+  { name: "Data Manipulation", level: "expert", category: "Data Analysis & Visualization" },
+  { name: "Data Cleansing", level: "expert", category: "Data Analysis & Visualization" },
+  { name: "Presentations", level: "advanced", category: "Data Analysis & Visualization" },
+  
+  { name: "SQL", level: "advanced", category: "Programming & Databases" },
+  { name: "Python", level: "advanced", category: "Programming & Databases" },
+  { name: "Pandas", level: "advanced", category: "Programming & Databases" },
+  { name: "NumPy", level: "advanced", category: "Programming & Databases" },
+  { name: "Matplotlib", level: "advanced", category: "Programming & Databases" },
+  { name: "Access VBA", level: "advanced", category: "Programming & Databases" },
+  { name: "HTML", level: "intermediate", category: "Programming & Databases" },
+  { name: "CSS", level: "intermediate", category: "Programming & Databases" },
+  { name: "PhpMyAdmin", level: "intermediate", category: "Programming & Databases" },
+  { name: "Jupyter Notebook", level: "advanced", category: "Programming & Databases" },
+  { name: "Oracle ERP", level: "advanced", category: "Programming & Databases" },
+  { name: "SPSS", level: "advanced", category: "Programming & Databases" },
+  
+  { name: "Project Management", level: "expert", category: "Project Management & Business" },
+  { name: "Strategic Thinking", level: "advanced", category: "Project Management & Business" },
+  { name: "Change Management", level: "advanced", category: "Project Management & Business" },
+  { name: "Agile Methodologies", level: "advanced", category: "Project Management & Business" },
+  { name: "Project Planning", level: "expert", category: "Project Management & Business" },
+  { name: "Financial Analysis", level: "expert", category: "Project Management & Business" },
+  { name: "Policy & Economics", level: "advanced", category: "Project Management & Business" },
+  { name: "Accounting Standards", level: "advanced", category: "Project Management & Business" },
+  
+  { name: "Microsoft Excel", level: "expert", category: "Technical & Software" },
+  { name: "VBA", level: "advanced", category: "Technical & Software" },
+  { name: "Pivot Tables", level: "expert", category: "Technical & Software" },
+  { name: "Advanced Formulas", level: "expert", category: "Technical & Software" },
+  
+  { name: "Analytical Skills", level: "expert", category: "Soft Skills & Leadership" },
+  { name: "Problem-Solving", level: "expert", category: "Soft Skills & Leadership" },
+  { name: "Collaboration", level: "expert", category: "Soft Skills & Leadership" },
+  { name: "Team Leadership", level: "advanced", category: "Soft Skills & Leadership" },
+  { name: "Attention to Detail", level: "expert", category: "Soft Skills & Leadership" },
+  { name: "Time Management", level: "advanced", category: "Soft Skills & Leadership" },
+  { name: "Communication", level: "advanced", category: "Soft Skills & Leadership" },
+  { name: "Multitasking", level: "expert", category: "Soft Skills & Leadership" },
 ];
 
 export const languages: SkillOrLanguage[] = [

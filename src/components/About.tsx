@@ -1,4 +1,6 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CollapsibleText } from "@/components/ui/collapsible-text";
 
 export const About = () => {
   return (
@@ -11,13 +13,11 @@ export const About = () => {
               About Me
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-lg text-gray-700 leading-relaxed space-y-4">
-            <p className="animate-fade-in">
-              Senior Data Analysis I am a seasoned Senior Data Specialist at the Egyptian Economic Authority - GAFI (General Authority for Investment and Free Zones), dedicated to driving impactful data analysis and visualization strategies to elevate decision-making processes. In addition to this role, I bring a wealth of experience from successfully leading my own startup company in Europe for four years as its Chief Executive Officer.
+          <CardContent className="text-lg leading-relaxed">
+            <CollapsibleText text="Senior Data Analysis I am a seasoned Senior Data Specialist at the Egyptian Economic Authority - GAFI (General Authority for Investment and Free Zones), dedicated to driving impactful data analysis and visualization strategies to elevate decision-making processes. In addition to this role, I bring a wealth of experience from successfully leading my own startup company in Europe for four years as its Chief Executive Officer.
 In the dynamic landscape of the investment management industry, I specialize in transforming complex datasets into actionable insights. My skill set includes advanced proficiency in Analytical Skills, Databases, and Quantitative Research. Notably, I played a pivotal role at GAFI, where I computerized all processes at the financial department and created a comprehensive database from scratch, covering the period from 2008 until now. This involved managing and analyzing vast amounts of data, generating numerous reports, and crafting intricate queries.
 My academic background includes valuable experience in academia, contributing to the fields of Business Administration and Management from Suez Canal University and Development Economics and International Development from the University of Vienna.
-As a data-driven professional with programming expertise, I excel in harnessing the power of analytics to inform strategic decision-making. Let's connect and explore how my unique blend of skills in data analysis, visualization, programming, and database management can contribute to the success of our mutual endeavors.
-            </p>
+As a data-driven professional with programming expertise, I excel in harnessing the power of analytics to inform strategic decision-making. Let's connect and explore how my unique blend of skills in data analysis, visualization, programming, and database management can contribute to the success of our mutual endeavors." />
           </CardContent>
         </Card>
       </div>

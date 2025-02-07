@@ -1,10 +1,11 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Progress } from "@/components/ui/progress";
 
 type SkillOrLanguage = {
   name: string;
   level: string;
+  category: string;
 };
 
 interface TechnicalSkillsProps {
@@ -13,6 +14,8 @@ interface TechnicalSkillsProps {
 }
 
 export const TechnicalSkills = ({ skills, getProgressValue }: TechnicalSkillsProps) => {
+  const categories = Array.from(new Set(skills.map(skill => skill.category)));
+
   const getLevelColor = (level: string) => {
     const value = getProgressValue(level);
     if (value >= 90) return "bg-green-500";
@@ -22,24 +25,35 @@ export const TechnicalSkills = ({ skills, getProgressValue }: TechnicalSkillsPro
   };
 
   return (
-    <Card className="bg-white/5 backdrop-blur-sm border border-accent/20">
-      <CardHeader>
-        <CardTitle className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          Technical Skills
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {skills.map((skill, index) => (
-            <div key={index} className="flex items-center gap-2">
-              <div className={`w-2 h-2 rounded-full ${getLevelColor(skill.level)}`} />
-              <Badge variant="outline" className="hover:bg-accent/20 transition-colors">
-                {skill.name}
-              </Badge>
+    <div className="grid gap-6">
+      {categories.map((category) => (
+        <Card key={category} className="bg-white/5 backdrop-blur-sm border border-accent/20">
+          <CardHeader>
+            <CardTitle className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              {category}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {skills
+                .filter(skill => skill.category === category)
+                .map((skill, index) => (
+                  <div key={index} className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="font-medium text-sm">{skill.name}</span>
+                      <span className="text-xs text-muted-foreground capitalize">{skill.level}</span>
+                    </div>
+                    <Progress 
+                      value={getProgressValue(skill.level)} 
+                      className="h-2"
+                      indicatorClassName={getLevelColor(skill.level)}
+                    />
+                  </div>
+                ))}
             </div>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
   );
 };
