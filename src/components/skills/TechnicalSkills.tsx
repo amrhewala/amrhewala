@@ -25,20 +25,20 @@ export const TechnicalSkills = ({ skills, getProgressValue }: TechnicalSkillsPro
   };
 
   return (
-    <div className="grid gap-6">
+    <div className="space-y-4">
       {categories.map((category) => (
         <Card key={category} className="bg-white/5 backdrop-blur-sm border border-accent/20">
-          <CardHeader>
+          <CardHeader className="py-3">
             <CardTitle className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               {category}
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {skills
                 .filter(skill => skill.category === category)
                 .map((skill, index) => (
-                  <div key={index} className="space-y-2">
+                  <div key={index} className="space-y-1.5">
                     <div className="flex items-center justify-between">
                       <span className="font-medium text-sm">{skill.name}</span>
                       <span className="text-xs text-muted-foreground capitalize">{skill.level}</span>
