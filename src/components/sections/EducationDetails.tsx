@@ -1,5 +1,7 @@
+
 import { education } from "@/data/education";
 import { Card, CardContent } from "@/components/ui/card";
+import { CollapsibleText } from "@/components/ui/collapsible-text";
 
 export const EducationDetails = () => {
   return (
@@ -13,13 +15,7 @@ export const EducationDetails = () => {
             <Card key={index} className="backdrop-blur-sm bg-white/80 border-none shadow-lg hover:shadow-accent/20 transition-all duration-500">
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold text-primary mb-2">{edu.name}</h3>
-                <div className="prose prose-sm max-w-none text-gray-700">
-                  {edu.fullDescription.split('\n').map((line, i) => (
-                    <p key={i} className="mb-2">
-                      {line}
-                    </p>
-                  ))}
-                </div>
+                <CollapsibleText text={edu.fullDescription} />
               </CardContent>
             </Card>
           ))}

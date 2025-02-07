@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { Plus, Minus } from 'lucide-react';
 
 interface CollapsibleTextProps {
   text: string;
@@ -26,11 +26,11 @@ export const CollapsibleText = ({ text, maxLines = 3 }: CollapsibleTextProps) =>
         >
           {isExpanded ? (
             <>
-              Show Less <ChevronUp className="w-4 h-4" />
+              Show Less <Minus className="w-4 h-4" />
             </>
           ) : (
             <>
-              Show More <ChevronDown className="w-4 h-4" />
+              Show More <Plus className="w-4 h-4" />
             </>
           )}
         </button>

@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
@@ -83,7 +82,7 @@ export const Portfolio = () => {
                         </>
                       )}
                     </Carousel>
-                    <p className="text-gray-700 whitespace-pre-line">{project.description}</p>
+                    <CollapsibleText text={project.description} />
                     <div className="flex flex-wrap gap-2 mt-4">
                       {project.technologies.map((tech, idx) => (
                         <Badge key={idx} variant="outline">
