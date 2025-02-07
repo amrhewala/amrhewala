@@ -1,8 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award } from "lucide-react";
+import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
+import { CollapsibleText } from "@/components/ui/collapsible-text";
 
-// Define the type for achievement items
 interface Achievement {
   title: string;
   description: string;
@@ -12,7 +13,6 @@ interface Achievement {
   link?: string;
 }
 
-// Define the achievements array
 const achievements: Achievement[] = [
   {
     title: "Prize: Highly Commended – Suez Free Zone, Egypt",
@@ -36,9 +36,40 @@ This recognition not only underscores my ability to lead teams, analyze complex 
       "/fDi-FZotY-2023-min.png",
       "/CONGRATULATIONS-min.png",
       "/2023-2.png",
-     
     ],
     link: "https://www.fdiintelligence.com/content/rankings-and-awards/global-free-zones-of-the-year-2023-awards-best-zones-overall-83065"
+  },
+  {
+    title: "Data Analysis Professional Nanodegree",
+    subtitle: "Udacity",
+    description: `Successfully completed the Data Analysis Professional Nanodegree program, demonstrating proficiency in:
+
+* Python Programming & Data Analysis Libraries (NumPy, Pandas, Matplotlib)
+* Data Cleaning & Preprocessing Techniques
+* Statistical Analysis & Visualization
+* Project Management & Agile Methodologies
+
+Completed multiple real-world projects including:
+1. Exploratory Data Analysis using Python
+2. Data Visualization & Communication
+3. Project Management Implementation`,
+    year: "2023",
+    photos: ["/lovable-uploads/172e0c7c-a193-4534-9af7-393e8daadfb2.png"],
+  },
+  {
+    title: "Power BI Data Analytics Certification",
+    subtitle: "Microsoft",
+    description: `Achieved certification in Power BI data analytics, showcasing expertise in:
+
+* Data Modeling & Transformation
+* DAX Formulas & Calculations
+* Interactive Dashboard Creation
+* Data Visualization Best Practices
+* Performance Optimization
+
+Implemented these skills in creating comprehensive business intelligence solutions and actionable insights for various organizational needs.`,
+    year: "2024",
+    photos: ["/Power-BI.png"],
   }
 ];
 
@@ -64,16 +95,26 @@ export const Achievements = () => {
                 <Badge variant="secondary">{achievement.year}</Badge>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">{achievement.description}</p>
+                <CollapsibleText text={achievement.description} />
                 {achievement.photos && (
                   <div className="mt-4 grid grid-cols-2 gap-4">
                     {achievement.photos.map((photo, photoIndex) => (
-                      <img
-                        key={photoIndex}
-                        src={photo}
-                        alt={`Achievement photo ${photoIndex + 1}`}
-                        className="rounded-lg shadow-md w-full h-auto"
-                      />
+                      <Dialog key={photoIndex}>
+                        <DialogTrigger>
+                          <img
+                            src={photo}
+                            alt={`Achievement photo ${photoIndex + 1}`}
+                            className="rounded-lg shadow-md w-full h-auto cursor-pointer hover:opacity-80 transition-opacity"
+                          />
+                        </DialogTrigger>
+                        <DialogContent className="max-w-4xl">
+                          <img
+                            src={photo}
+                            alt={`Achievement photo ${photoIndex + 1}`}
+                            className="w-full h-auto object-contain"
+                          />
+                        </DialogContent>
+                      </Dialog>
                     ))}
                   </div>
                 )}

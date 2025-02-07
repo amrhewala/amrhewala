@@ -1,3 +1,4 @@
+
 import {
   Carousel,
   CarouselContent,
@@ -28,7 +29,7 @@ export const CertificatesCarousel = ({ certificates }: CertificatesCarouselProps
       <Carousel className="w-full">
         <CarouselContent>
           {certificates.map((item, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
               <div className="p-1">
                 <Card className="bg-white/5 backdrop-blur-sm border border-accent/20 hover:border-accent/40 transition-colors">
                   <CardContent className="flex flex-col items-center justify-center p-6 gap-4">
