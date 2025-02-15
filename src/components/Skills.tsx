@@ -1,14 +1,11 @@
-
 import { TechnicalSkills } from "./skills/TechnicalSkills";
 import { LanguageSkills } from "./skills/LanguageSkills";
 import { SoftSkillsCarousel } from "./skills/SoftSkillsCarousel";
 import { skills, languages, softSkills, getProgressValue } from "./skills/SkillsData";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sparkles } from "lucide-react";
-
 export const Skills = () => {
-  return (
-    <section className="py-12 bg-gradient-to-br from-primary/5 to-accent/5">
+  return <section className="bg-gradient-to-br from-primary/5 to-accent/5 py-[4px]">
       <div className="container">
         <Card className="backdrop-blur-sm bg-white/80 border-none shadow-2xl hover:shadow-accent/20 transition-all duration-500 animate-fade-in">
           <CardHeader className="pb-2">
@@ -27,6 +24,5 @@ export const Skills = () => {
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };

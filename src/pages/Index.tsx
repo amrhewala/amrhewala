@@ -1,4 +1,3 @@
-
 import { ProfileSection } from "@/components/sections/ProfileSection";
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
@@ -14,61 +13,67 @@ import { SocialLinks } from "@/components/hero/SocialLinks";
 import { LogoSection } from "@/components/sections/LogoSection";
 import { EducationDetails } from "@/components/sections/EducationDetails";
 import { ArticlesSection } from "@/components/ArticlesSection";
-
-const sections = [
-  { 
-    id: 'profile', 
-    component: (
-      <div className="space-y-4">
+const sections = [{
+  id: 'profile',
+  component: <div className="space-y-4">
         <ProfileSection />
         <SocialLinks />
       </div>
-    )
-  },
-  { 
-    id: 'about', 
-    component: (
-      <div className="space-y-8">
+}, {
+  id: 'about',
+  component: <div className="space-y-8">
         <About />
       </div>
-    ) 
-  },
-  { id: 'logos', component: <LogoSection /> },
-  { id: 'education-details', component: <EducationDetails /> },
-  { 
-    id: 'education', 
-    component: (
-      <div className="py-8 flex justify-center">
+}, {
+  id: 'logos',
+  component: <LogoSection />
+}, {
+  id: 'education-details',
+  component: <EducationDetails />
+}, {
+  id: 'education',
+  component: <div className="flex justify-center py-0">
         <div className="w-full max-w-6xl px-4">
           <CertificatesCarousel certificates={certificates} />
         </div>
       </div>
-    ) 
-  },
-  { id: 'skills', component: <Skills /> },
-  { id: 'articles', component: <ArticlesSection /> },
-  { id: 'experience', component: <Experience /> },
-  { id: 'services', component: <Services /> },
-  { id: 'portfolio', component: <Portfolio /> },
-  { id: 'achievements', component: <Achievements /> },
-  { id: 'testimonials', component: <Testimonials /> },
-  { id: 'contact', component: <ContactForm /> },
-];
-
+}, {
+  id: 'skills',
+  component: <Skills />
+}, {
+  id: 'articles',
+  component: <ArticlesSection />
+}, {
+  id: 'experience',
+  component: <Experience />
+}, {
+  id: 'services',
+  component: <Services />
+}, {
+  id: 'portfolio',
+  component: <Portfolio />
+}, {
+  id: 'achievements',
+  component: <Achievements />
+}, {
+  id: 'testimonials',
+  component: <Testimonials />
+}, {
+  id: 'contact',
+  component: <ContactForm />
+}];
 const Index = () => {
-  return (
-    <main className="min-h-screen bg-gradient-to-br from-primary/5 via-accent/10 to-background">
+  return <main className="min-h-screen bg-gradient-to-br from-primary/5 via-accent/10 to-background">
       <div className="absolute inset-0 bg-grid-white/10 bg-[size:20px_20px] [mask-image:radial-gradient(white,transparent_85%)]" />
       
       <div className="relative space-y-8">
-        {sections.map(({ id, component }) => (
-          <div key={id}>
+        {sections.map(({
+        id,
+        component
+      }) => <div key={id}>
             {component}
-          </div>
-        ))}
+          </div>)}
       </div>
-    </main>
-  );
+    </main>;
 };
-
 export default Index;
