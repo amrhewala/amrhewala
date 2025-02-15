@@ -1,3 +1,4 @@
+
 import { ProfileSection } from "@/components/sections/ProfileSection";
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
@@ -12,6 +13,7 @@ import { certificates } from "@/data/certificates";
 import { SocialLinks } from "@/components/hero/SocialLinks";
 import { LogoSection } from "@/components/sections/LogoSection";
 import { EducationDetails } from "@/components/sections/EducationDetails";
+import { ArticlesSection } from "@/components/ArticlesSection";
 
 const sections = [
   { 
@@ -44,6 +46,7 @@ const sections = [
     ) 
   },
   { id: 'skills', component: <Skills /> },
+  { id: 'articles', component: <ArticlesSection /> },
   { id: 'experience', component: <Experience /> },
   { id: 'services', component: <Services /> },
   { id: 'portfolio', component: <Portfolio /> },

@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { useState, useEffect } from "react";
 
 type SkillOrLanguage = {
   name: string;
@@ -15,6 +16,11 @@ interface TechnicalSkillsProps {
 
 export const TechnicalSkills = ({ skills, getProgressValue }: TechnicalSkillsProps) => {
   const categories = Array.from(new Set(skills.map(skill => skill.category)));
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
 
   const getLevelColor = (level: string) => {
     const value = getProgressValue(level);
@@ -26,8 +32,14 @@ export const TechnicalSkills = ({ skills, getProgressValue }: TechnicalSkillsPro
 
   return (
     <div className="space-y-4">
-      {categories.map((category) => (
-        <Card key={category} className="bg-white/5 backdrop-blur-sm border border-accent/20">
+      {categories.map((category, categoryIndex) => (
+        <Card 
+          key={category} 
+          className={`bg-white/5 backdrop-blur-sm border border-accent/20 transform transition-all duration-500 hover:scale-[1.02] ${
+            animate ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+          }`}
+          style={{ transitionDelay: `${categoryIndex * 100}ms` }}
+        >
           <CardHeader className="py-3">
             <CardTitle className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               {category}
@@ -44,8 +56,8 @@ export const TechnicalSkills = ({ skills, getProgressValue }: TechnicalSkillsPro
                       <span className="text-xs text-muted-foreground capitalize">{skill.level}</span>
                     </div>
                     <Progress 
-                      value={getProgressValue(skill.level)} 
-                      className={`h-2 ${getLevelColor(skill.level)}`}
+                      value={animate ? getProgressValue(skill.level) : 0} 
+                      className={`h-2 transition-all duration-1000 ${getLevelColor(skill.level)}`}
                     />
                   </div>
                 ))}
