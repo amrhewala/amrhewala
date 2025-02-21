@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const projects = [
   {
@@ -84,37 +85,41 @@ export const Portfolio = () => {
                     </Carousel>
                   </div>
                 </DialogTrigger>
-                <DialogContent className="max-w-4xl">
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-                    <Carousel className="w-full mb-6">
-                      <CarouselContent>
-                        {project.images.map((image, imgIndex) => (
-                          <CarouselItem key={imgIndex}>
-                            <img 
-                              src={image} 
-                              alt={`${project.title} - Image ${imgIndex + 1}`}
-                              className="w-full h-auto object-contain"
-                            />
-                          </CarouselItem>
+                <DialogContent className="max-w-4xl max-h-[90vh]">
+                  <ScrollArea className="h-full max-h-[85vh] pr-4">
+                    <div className="p-6">
+                      <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+                      <Carousel className="w-full mb-6">
+                        <CarouselContent>
+                          {project.images.map((image, imgIndex) => (
+                            <CarouselItem key={imgIndex}>
+                              <img 
+                                src={image} 
+                                alt={`${project.title} - Image ${imgIndex + 1}`}
+                                className="w-full h-auto max-h-[50vh] object-contain"
+                              />
+                            </CarouselItem>
+                          ))}
+                        </CarouselContent>
+                        {project.images.length > 1 && (
+                          <>
+                            <CarouselPrevious />
+                            <CarouselNext />
+                          </>
+                        )}
+                      </Carousel>
+                      <div className="whitespace-pre-line text-muted-foreground">
+                        {project.description}
+                      </div>
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {project.technologies.map((tech, idx) => (
+                          <Badge key={idx} variant="outline">
+                            {tech}
+                          </Badge>
                         ))}
-                      </CarouselContent>
-                      {project.images.length > 1 && (
-                        <>
-                          <CarouselPrevious />
-                          <CarouselNext />
-                        </>
-                      )}
-                    </Carousel>
-                    <CollapsibleText text={project.description} />
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {project.technologies.map((tech, idx) => (
-                        <Badge key={idx} variant="outline">
-                          {tech}
-                        </Badge>
-                      ))}
+                      </div>
                     </div>
-                  </div>
+                  </ScrollArea>
                 </DialogContent>
               </Dialog>
               <CardHeader>
