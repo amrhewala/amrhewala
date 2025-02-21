@@ -69,4 +69,4 @@ export const TechnicalSkills = ({ skills, getProgressValue }: TechnicalSkillsPro
       ))}
     </div>
   );
-});
+};
