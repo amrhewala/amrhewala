@@ -11,7 +11,7 @@ export const Skills = () => {
     <section className="py-16 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-background" />
       <div 
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0 opacity-20"
         style={{
           backgroundImage: `radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 1px, transparent 1px)`,
           backgroundSize: '24px 24px',
@@ -33,17 +33,17 @@ export const Skills = () => {
           </CardHeader>
           <CardContent className="space-y-10">
             <div className="grid gap-10">
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <h3 className="text-2xl font-semibold text-center text-primary">Technical Proficiency</h3>
                 <TechnicalSkills skills={skills} getProgressValue={getProgressValue} />
               </div>
               
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <h3 className="text-2xl font-semibold text-center text-primary">Language Proficiency</h3>
                 <LanguageSkills languages={languages} getProgressValue={getProgressValue} />
               </div>
               
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <h3 className="text-2xl font-semibold text-center text-primary">Soft Skills & Certifications</h3>
                 <SoftSkillsCarousel softSkills={softSkills} />
               </div>
