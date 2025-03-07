@@ -4,7 +4,7 @@ import { LanguageSkills } from "./skills/LanguageSkills";
 import { SoftSkillsCarousel } from "./skills/SoftSkillsCarousel";
 import { skills, languages, softSkills, getProgressValue } from "./skills/SkillsData";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Star, StarHalf, CircleDot } from "lucide-react";
 
 export const Skills = () => {
   return (
