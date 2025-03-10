@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 const experiences = [{
@@ -5,6 +6,14 @@ const experiences = [{
   company: "GAFI",
   period: "2018 - Present",
   description: "Leading development teams and implementing enterprise-level solutions.",
+  achievements: [
+    "Spearheaded the analysis of financial data to generate actionable insights, improving operational efficiency by 15% and supporting strategic decision-making.",
+    "Designed and implemented Power BI dashboards, reducing manual reporting time by 40% and enhancing financial transparency across departments.",
+    "Led a team of 4 data analysts, optimizing workflows and reducing report turnaround time by 30%.",
+    "Identified key financial trends, resulting in a 25% improvement in data processing speed and accuracy.",
+    "Collaborated with cross-functional teams to develop automated data pipelines, reducing manual data entry errors by 20%.",
+    "Conducted training sessions on Power BI and data visualization best practices, improving team productivity by 15%."
+  ],
   skills: ["PHP", "Python", "NumPy", "Pandas", "Matplotlib", "Agile"]
 }, {
   title: "CEO",
@@ -32,6 +41,17 @@ export const Experience = () => {
               </CardHeader>
               <CardContent>
                 <p className="mb-4 text-gray-700">{exp.description}</p>
+                
+                {exp.achievements && (
+                  <div className="mb-4">
+                    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                      {exp.achievements.map((achievement, idx) => (
+                        <li key={idx}>{achievement}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                
                 <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill, idx) => <Badge key={idx} variant="secondary" className="hover:bg-accent/20 transition-colors">
                       {skill}
