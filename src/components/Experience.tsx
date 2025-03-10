@@ -26,6 +26,13 @@ const experiences = [{
   company: "GAFI",
   period: "2007 - 2015",
   description: "Leading development teams and implementing enterprise-level solutions.",
+  achievements: [
+    "Supervised financial operations for Adabia Free Zone projects, ensuring compliance with regulatory standards and improving reporting accuracy by 20%.",
+    "Digitized 80% of financial paperwork by developing a comprehensive database, streamlining bookkeeping, registrations, and accounting processes.",
+    "Served as an Oracle ERP Key User, training team members and optimizing system usage, resulting in a 15% improvement in operational efficiency.",
+    "Acted as the Investor Support Lead, resolving financial and operational issues, and maintaining a 100% compliance rate with updated guidelines.",
+    "Established a feedback loop with the central help desk, improving service quality and reducing resolution time by 25%."
+  ],
   skills: ["MS Accsses", "MS Excel", "Agile"]
 }];
 export const Experience = () => {
