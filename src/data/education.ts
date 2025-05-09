@@ -45,8 +45,7 @@ Skills: Matplotlib · Data Manipulation · Perform EDA · Python · Pandas · Vi
     logo: "/Suez_Canal_University.png",
     color: "#1a365d",
     description: "Suez Canal University, Business Administration and Management (2014-2015). Member of the university volleyball team. Skills: Data Analytics, Accounting Standards",
-    fullDescription: `Master of Business Administration (MBA), Business Administration and Management
-2014 - 2015
+    fullDescription: `Suez Canal University, Business Administration and Management 2014 - 2015
 Activities and societies: Member of university volleyball team
 Skills: Data Analytics · Accounting Standards`,
   },
