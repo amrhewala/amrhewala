@@ -45,23 +45,23 @@ Skills: Matplotlib · Data Manipulation · Perform EDA · Python · Pandas · Vi
     logo: "/Suez_Canal_University.png",
     color: "#1a365d",
     description: "Suez Canal University, Business Administration and Management (2014-2015). Member of the university volleyball team. Skills: Data Analytics, Accounting Standards",
-    fullDescription: `Suez Canal University, Business Administration and Management 2014 - 2015
+    fullDescription: `Suez Canal University, Business Administration and Management ( 2014 - 2015 )
 Activities and societies: Member of university volleyball team
 Skills: Data Analytics · Accounting Standards`,
   },
   {
-    name: "Vienna University",
+    name: "Master's degree, Development Economics and International Development",
     logo: "/Uni.png",
     color: "#00274C",
     description: "Master's degree in Development Economics and International Development (2016-2019)",
-    fullDescription: `Master's degree, Development Economics and International Development
-2016 - 2019`,
+    fullDescription: `Vienna University
+ (2016 - 2019 )`,
   },
   {
-    name: "Suez Canal University",
+    name: "Bachelor's degree in Science & Education, Mathematics",
     logo: "/Suez_Canal_University.png",
     color: "#1a365d",
-    description: "Bachelor's degree in Science & Education, Mathematics (2000-2005). Active member of the university volleyball team.",
+    description: "Suez Canal University (2000-2005). Active member of the university volleyball team.",
     fullDescription: `Bachelor's degree in Science & Education, Mathematics
 2000 - 2005
 Activities and societies: Member of volleyball team`,
