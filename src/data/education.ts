@@ -24,11 +24,11 @@ Tools I gained through the course::
 -Data Governance`,
   },
   {
-    name: "Data Analysis Professional Nanodegree Program",
+    name: "Data Analysis Professional -  Nanodegree Program",
     logo: "/udacity.svg",
     color: "#02b3e4",
-    description: " Udacity - Data Analysis Professional Nanodegree Program (Jan 2023 - Mar 2023)",
-    fullDescription: `Nanodegree Program, Data Analysis Professional
+    description: "Data Analysis Professional Nanodegree Program (Jan 2023 - Mar 2023)",
+    fullDescription: `Udacity - Nanodegree Program, Data Analysis Professional
 Jan 2023 - Mar 2033
 Tools I gained through the course:
 - Python (Datatypes, Data Structures, Conditions, Loops, Functions, Scripting) dealing with important Python Libraries such as (NumPy - Pandas - Matplotlib)
