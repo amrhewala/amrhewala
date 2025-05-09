@@ -28,7 +28,8 @@ Tools I gained through the course::
     logo: "/udacity.svg",
     color: "#02b3e4",
     description: "Data Analysis Professional Nanodegree Program (Jan 2023 - Mar 2023)",
-    fullDescription: `Udacity - Nanodegree Program, (Jan 2023 - Mar 2033)
+    fullDescription: `Udacity - Nanodegree Program, 
+(Jan 2023 - Mar 2033)
 Tools I gained through the course:
 - Python (Datatypes, Data Structures, Conditions, Loops, Functions, Scripting) dealing with important Python Libraries such as (NumPy - Pandas - Matplotlib)
 - Data Analysis techniques (Gathering, Cleaning, Preprocessing Data)
@@ -45,7 +46,8 @@ Skills: Matplotlib · Data Manipulation · Perform EDA · Python · Pandas · Vi
     logo: "/Suez_Canal_University.png",
     color: "#1a365d",
     description: "Suez Canal University, Business Administration and Management (2014-2015). Member of the university volleyball team. Skills: Data Analytics, Accounting Standards",
-    fullDescription: `Suez Canal University, Business Administration and Management ( 2014 - 2015 )
+    fullDescription: `Suez Canal University, Business Administration and Management 
+( 2014 - 2015 )
 Activities and societies: Member of university volleyball team
 Skills: Data Analytics · Accounting Standards`,
   },
@@ -63,7 +65,7 @@ Skills: Data Analytics · Accounting Standards`,
     color: "#1a365d",
     description: "Suez Canal University (2000-2005). Active member of the university volleyball team.",
     fullDescription: `Bachelor's degree in Science & Education, Mathematics
-2000 - 2005
+( 2000 - 2005 )
 Activities and societies: Member of volleyball team`,
   }
 ];
