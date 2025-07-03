@@ -3,9 +3,9 @@ export const education = [
     name: "Microsoft Power BI Specialist",
     logo: "/Power-BI.png",
     color: "#1a365d",
-    description: "DEPI – Microsoft Power BI Engineer scholarship (Jan 2024 - Apr 2025)",
+    description: "DEPI – Microsoft Power BI Engineer scholarship (Oct 2024 - May 2025)",
     fullDescription: `DEPI – Microsoft Power BI Engineer scholarship
- (Jan 2024 - Apr 2025)
+ (Oct 2024 - May 2025)
 Digital Egypt Pioneers Initiative (DEPI) – Microsoft Power BI Engineer Track Offered by the Ministry of Communications and Information Technology (MCIT),
     this scholarship focuses on data analytics using Microsoft Power BI and Azure services.
     Participants will gain expertise in collecting, analyzing, and visualizing data to extract meaningful insights for informed decision-making.
