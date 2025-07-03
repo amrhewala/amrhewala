@@ -11,7 +11,7 @@ export const ProfileSection = () => {
         Amr Hewala
       </h1>
       <p className="text-xl md:text-2xl text-gray-600 mb-4 animate-fade-in delay-100">
-        Senior Data Analysis
+        Senior Data Analytics Team Leader
       </p>
       <p className="text-xl md:text-1xl text-black-600 mb-4 animate-fade-in delay-100">
         Bridging Data and Business to Drive Economic Success
